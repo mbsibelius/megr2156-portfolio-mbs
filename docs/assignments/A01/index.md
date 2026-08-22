@@ -5,11 +5,11 @@ Set up Your own Portfolio
 
 ## Analyze
 Part A: Portfolio Analysis
-
-Engineering Portfolio: Nathan Hong
+https://nhoong.github.io/
+Engineering Portfolio: Nathan Hoong
 
 Navigability
-Nathan Hong's portfolio is easy to navigate as a reader. The portfolio section of his website is immediately visible
+Nathan Hoong's portfolio is easy for readers to navigate. All of Hoong's works can be found in under 60 seconds just by scrolling down the portfolio section of the website.
 
 ## Decide
 
