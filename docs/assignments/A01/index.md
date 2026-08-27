@@ -62,7 +62,7 @@ ii.  Identify one design decision the original engineer made : something you can
 ## Decide
 
   Homepage Identity : Your homepage is the entry point to a professional engineering record. What does a visitor need to know immediately to understand what this portfolio contains, how it is organized, and what standard it holds itself to? Write one paragraph justifying your homepage content decisions in terms of your intended reader : not in terms of yourself. The About Me section covers who you are. The homepage covers what this portfolio is.
-This portfolio contains all my work completed during my MEGR 2157 course. All of my work is organized chronologically, from oldest to youngest, and follows the Analyze, Decide, and Communicate Format. This portfolio serves to document my work so all of my 
+This portfolio contains all my work completed during my MEGR 2157 course. All of my work is organized chronologically, from oldest to youngest, and follows the Analyze, Decide, and Communicate Format. This portfolio serves to document my work throughout the course of the semester. All sections serve to demonstrate my design process of my work through the course of the semester.
 
 2.  One Intentional Customization : Identify one element of the template : color scheme, typography, logo, or section labels : and change it deliberately. Document what you changed, what requirement your change better satisfies, and why the template default did not meet that requirement. "I preferred it" is not a requirement. State the functional reason.
 I changed the primary color of the palette from green to black and removed the banner image to give the portfolio a professional look.
