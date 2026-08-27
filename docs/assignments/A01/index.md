@@ -48,6 +48,7 @@ The force that is applied by can be roughly calculated using the equation and di
 
 ![Clamping force.png]
 ![Clamp2-1hqtl.png]
+![MEGR2156title.png]
 
 The variables of this equation would be the radius of the belt and the tension applied by the clasp.
 
