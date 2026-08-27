@@ -37,23 +37,28 @@ Capehart demonstrates professional tone throughout his portfolio through his con
 
 Task B:  Product Analysis (25%)
 
-Select a physical product you own or can access that meets both of the following constraints: it is primarily mechanical (it transmits force, motion, or energy through physical geometry) and it has three or fewer individual components. The constraint is intentional. A simple product analyzed rigorously will teach you more than a complex product analyzed superficially. If you cannot identify the governing mechanical behavior of your chosen product, choose a simpler one. That judgment: knowing when a problem is tractable, is itself an engineering skill.
-
-Search for the patent using Google Patents (patents.google.com) or USPTO (patents.google.com). For your chosen product, document the following on your A1 portfolio page:
+Select a physical product you own or can access that meets both of the following constraints: it is primarily mechanical (it transmits force, motion, or energy 
 a.  (15%) What is the primary function of this product? State it as an engineering function : what mechanical task does it perform? State it precisely, not as a consumer description.
 
 The primary function of this product is to be a clamp.
 
 b.  Identify the governing model : what equation or physical principle governs its primary behavior?
 
+The force that is applied by can be roughly calculated using the equation and diagram below.
 
-i.  State the model and identify its variables.
+![Clamping force.png]
+![Clamp2-1hqtl.png]
 
-ii.  State one assumption that makes the model valid for this product.
+The variables of this equation would be the radius of the belt and the tension applied by the clasp.
+
+One assumption that would make the model work is that the radius of the belt shrinks equally around the belt.
 
 c.  (15%) Take photographs of each component. Under each photograph, describe precisely how the geometry of that component affects its mechanical function.
 
+
+
 d.  Using patent research, identify the patent number and author(s). Then:
+Patent #US4541152A Authored by Thomas J. DiMarco, Joel E. Di Marco
 
 i.  List at least two alternative solutions or devices that solve the same primary function.
 
