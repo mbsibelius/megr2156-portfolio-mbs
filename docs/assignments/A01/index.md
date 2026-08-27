@@ -39,13 +39,13 @@ Task B:  Product Analysis (25%)
 
 Select a physical product you own or can access that meets both of the following constraints: it is primarily mechanical (it transmits force, motion, or energy through physical geometry) and it has three or fewer individual components. The constraint is intentional. A simple product analyzed rigorously will teach you more than a complex product analyzed superficially. If you cannot identify the governing mechanical behavior of your chosen product, choose a simpler one. That judgment: knowing when a problem is tractable, is itself an engineering skill.
 
-
 Search for the patent using Google Patents (patents.google.com) or USPTO (patents.google.com). For your chosen product, document the following on your A1 portfolio page:
-
-
 a.  (15%) What is the primary function of this product? State it as an engineering function : what mechanical task does it perform? State it precisely, not as a consumer description.
 
+The primary function of this product is to be a clamp.
+
 b.  Identify the governing model : what equation or physical principle governs its primary behavior?
+
 
 i.  State the model and identify its variables.
 
