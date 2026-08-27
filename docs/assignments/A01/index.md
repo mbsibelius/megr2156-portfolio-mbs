@@ -2,6 +2,7 @@
 
 ## Objective
 Set up Your own Portfolio
+![title](MEGR2156title.png)
 
 ## Analyze
 Part A: Portfolio Analysis
