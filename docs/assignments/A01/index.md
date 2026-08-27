@@ -46,9 +46,9 @@ b.  Identify the governing model : what equation or physical principle governs i
 
 The force that is applied by can be roughly calculated using the equation and diagram below.
 
-![Clamping force.png]
-![Clamp2-1hqtl.png]
-![MEGR2156title.png]
+![Clamping force diagram](Clamping force.png)
+![Clamping force diagram 2](Clamp2-1hqtl.png)
+
 
 The variables of this equation would be the radius of the belt and the tension applied by the clasp.
 
