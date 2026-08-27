@@ -46,20 +46,18 @@ b.  Identify the governing model : what equation or physical principle governs i
 
 The force that is applied by can be roughly calculated using the equation and diagram below.
 
-![Clamping force diagram](/images/Clamping force.png)
-![Clamping force diagram 2](Clamp2-1_hqtlgi.png)
-
+![Clamping force diagram figure 1](Clamping_force.png)
+![Clamping force diagram figure 2](Clamp2-1_hqtlgi.png)
 
 The variables of this equation would be the radius of the belt and the tension applied by the clasp.
-
 One assumption that would make the model work is that the radius of the belt shrinks equally around the belt.
 
 c.  (15%) Take photographs of each component. Under each photograph, describe precisely how the geometry of that component affects its mechanical function.
 
-
+!
 
 d.  Using patent research, identify the patent number and author(s). Then:
-Patent #US4541152A Authored by Thomas J. DiMarco, Joel E. Di Marco
+The mechanism for this weight lifting belt was published September 17 1985 under patent #US4541152A authored by Thomas J. DiMarco and Joel E. Di Marco
 
 i.  List at least two alternative solutions or devices that solve the same primary function.
 
