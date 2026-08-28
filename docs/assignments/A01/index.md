@@ -54,7 +54,10 @@ One assumption that would make the model work is that the radius of the belt shr
 
 c.  (15%) Take photographs of each component. Under each photograph, describe precisely how the geometry of that component affects its mechanical function.
 
-!
+![Belt lever closed position](beltLeverClosed.jpg)
+![Belt closed]()
+![Belt lever open position](beltLeverOpen.jpg)
+![Belt open}()
 
 d.  Using patent research, identify the patent number and author(s). Then:
 The mechanism for this weight lifting belt was published September 17 1985 under patent #US4541152A authored by Thomas J. DiMarco and Joel E. Di Marco
