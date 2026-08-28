@@ -35,16 +35,15 @@ Capehart's documentation of the process of designing and making demonstrates str
 Professional Tone:
 Capehart demonstrates professional tone throughout his portfolio through his concise statements.
 
-Task B:  Product Analysis (25%)
+Task B:  Product Analysis
 
-Select a physical product you own or can access that meets both of the following constraints: it is primarily mechanical (it transmits force, motion, or energy 
-a.  (15%) What is the primary function of this product? State it as an engineering function : what mechanical task does it perform? State it precisely, not as a consumer description.
+![Lifting Belt](beltNormal.jpg)
 
-The primary function of this product is to be a clamp.
+The primary function of the lifting belt is to act as apply force around the inner circumference of the belt by decreasing the radius of the belt.
 
 b.  Identify the governing model : what equation or physical principle governs its primary behavior?
 
-The force that is applied by can be roughly calculated using the equation and diagram below.
+The force that is applied by can be roughly calculated and explained using the equation and diagram below.
 
 ![Clamping force diagram figure 1](Clamping_force.png)
 ![Clamping force diagram figure 2](Clamp2-1_hqtlgi.png)
@@ -52,19 +51,21 @@ The force that is applied by can be roughly calculated using the equation and di
 The variables of this equation would be the radius of the belt and the tension applied by the clasp.
 One assumption that would make the model work is that the radius of the belt shrinks equally around the belt.
 
-c.  (15%) Take photographs of each component. Under each photograph, describe precisely how the geometry of that component affects its mechanical function.
-
-![Belt lever closed position](beltLeverClosed.jpg)
-![Belt closed]()
+![Belt open](1000069864)
+In the belts open position the radius of the belt is larger than needed in order to wrap around the subject before applying force.
 ![Belt lever open position](beltLeverOpen.jpg)
-![Belt open}()
+In the belt buckles open position we can see that the distance between plate of the anchored end and the additional posts of the hooks allow for the belt to have a larger radius.
+![Belt lever closed position](beltLeverClosed.jpg)
+In the belt buckles closed position the distance between the plate of anchor and the additional posts of the hooks have decreased and are now over lapping decreasing the belts radius.
+![Belt closed](1000069867)
+When the belt buckle is engaged the radius of the belt decreases applying force along the inner circumference of the belt.
 
-d.  Using patent research, identify the patent number and author(s). Then:
-The mechanism for this weight lifting belt was published September 17 1985 under patent #US4541152A authored by Thomas J. DiMarco and Joel E. Di Marco
-
-i.  List at least two alternative solutions or devices that solve the same primary function.
-
-ii.  Identify one design decision the original engineer made : something you can see in the patent or geometry : and explain why you think they made that choice.
+  The mechanism for this weight lifting belt was published September 17 1985 under patent #US4541152A authored by Thomas J. DiMarco and Joel E. Di Marco.
+i. two alternative solutions or devices that solve the same primary function.
+  Two alternative solutions would be a lifting belt with the traditional belt buckle and two prongs and rows of holes or ratchet based belt where the free end of the belt feeds into a linear ratchet that can be released.
+  
+ii. one design decision the original engineer made : something you can see in the patent or geometry : and explain why you think they made that choice.
+  The design decision for the lever engaging belt buckle was made so that users could quickly engage and disengage the belt.
 
 ## Decide
 
