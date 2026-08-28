@@ -51,13 +51,13 @@ The force that is applied by can be roughly calculated and explained using the e
 The variables of this equation would be the radius of the belt and the tension applied by the clasp.
 One assumption that would make the model work is that the radius of the belt shrinks equally around the belt.
 
-![Belt open](1000069864)
+![Belt open](1000069864.jpg)
 In the belts open position the radius of the belt is larger than needed in order to wrap around the subject before applying force.
 ![Belt lever open position](beltLeverOpen.jpg)
 In the belt buckles open position we can see that the distance between plate of the anchored end and the additional posts of the hooks allow for the belt to have a larger radius.
 ![Belt lever closed position](beltLeverClosed.jpg)
 In the belt buckles closed position the distance between the plate of anchor and the additional posts of the hooks have decreased and are now over lapping decreasing the belts radius.
-![Belt closed](1000069867)
+![Belt closed](1000069867.jpg)
 When the belt buckle is engaged the radius of the belt decreases applying force along the inner circumference of the belt.
 
   The mechanism for this weight lifting belt was published September 17 1985 under patent #US4541152A authored by Thomas J. DiMarco and Joel E. Di Marco.
