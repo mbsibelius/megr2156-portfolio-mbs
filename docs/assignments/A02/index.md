@@ -1,9 +1,18 @@
 # A2 – Truss Stress Analysis
 
 ## Objective
-
+- Design a lightweight planar truss using A500 steel or an alternative material.
+- Create free body diagrams (FBDs) for joints and critical pins.
+- Calculate the required cross-sectional area of truss elements with a safety factor.
+- Determine pin sizes based on shear forces with a safety factor.
+- Solve equations symbolically and numerically for both truss and pin design.
+- Estimate the total weight of the truss and pins.
+- Create a CAD model with accurate dimensions and connections.
+- Compare CAD weight predictions with hand calculations.
+- Document key engineering lessons learned from the process.
 
 ## Analyze
+Due to having a late start to this assignment I did not spend much time analyzing the situation. However, with my lack of time I had only come up with a design that was similar to a roof truss. 
 https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
 https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
 
@@ -25,11 +34,10 @@ Support your choice using stress comparisons and simple reasoning.
 Propose a design modification that could reduce the likelihood of this failure.
 In order to prevent each member from failing due to buckling, I would change the cross-sectional area to a square with a length of 13.34 to increase the critical load on the smallest member to 14.6 kN.
 
-(10pt) Part 2 – Pin Connections
-Identify the expected failure mode of the pin.
+ Part 2 – Pin Connections
 
-Support your answer with data from credible, known sources.
-Propose a design modification to reduce the likelihood of this failure
+In order to figure this out I compared the shear capacity of the pin to the bearing capacity of the member. Using the equations provided from the video linked here https://youtu.be/VHd_eSXwbIc. From the calculations the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure I would increase the diameter of the pins.
+https://www.structuremag.org/article/design-of-bolted-connections-per-the-2015-nds/
 
 ## Communicate
 
