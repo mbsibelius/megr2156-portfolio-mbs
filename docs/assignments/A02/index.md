@@ -11,9 +11,11 @@
 - Compare CAD weight predictions with hand calculations.
 - Document key engineering lessons learned from the process.
 
-### Analyze
-# test
-Due to having a late start to this assignment I did not spend much time analyzing the situation. However, with my lack of time I had only come up with a design that was similar to a roof truss. Simi 
+## Analyze
+
+#### df
+
+The initial research for this truss analysis started with looking at the diagram given and finding out the material properties of A500 steel. Due to having a late start to this assignment I did not spend much time analyzing the situation and went with the first design that came to my mind. I placed a point in the middle of the top member and connected points D and C to it labeling it point E then through google I
 https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
 https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
 
