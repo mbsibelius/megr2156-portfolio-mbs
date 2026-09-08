@@ -20,12 +20,14 @@ State whether the material is ductile or brittle.
   According to the document attached, Grade B ASTM A500 Steel has a carbon content less than or equal to 0.30%, making it more ductile.
 
 Support your choice using stress comparisons and simple reasoning.
-  According to the document attached, the yield strength of each member is 315 MPa. For members under tension, the largest amount of normal stress experienced is 90 MPa. With my current model, all members under compression would buckle under load. Using Euler's buckling formula, members BD, DE, and EA have critical loads of 6.41 kN, 12.3 kN, and 4.450 respectively. All of which are well under the loads they experience from my analysis
+  According to the document attached, the yield strength of each member is 315 MPa. For members under tension, the largest amount of normal stress experienced is 90 MPa. With my current model, all members under compression would buckle under load. Using Euler's buckling formula, members BD, DE, and EA have critical loads of 6.41 kN, 12.3 kN, and 4.450 respectively. All of which are well below the loads they experience, according to my analysis.
 
 Propose a design modification that could reduce the likelihood of this failure.
-(10pt) Part 2 – Pin Connections
+In order to prevent each member from failing due to buckling, I would change the cross-sectional area to a square with a length of 13.34 to increase the critical load on the smallest member to 14.6 kN.
 
+(10pt) Part 2 – Pin Connections
 Identify the expected failure mode of the pin.
+
 Support your answer with data from credible, known sources.
 Propose a design modification to reduce the likelihood of this failure
 
