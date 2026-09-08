@@ -11,7 +11,7 @@
 - Compare CAD weight predictions with hand calculations.
 - Document key engineering lessons learned from the process.
 
-## Analyze
+### Analyze
 # test
 Due to having a late start to this assignment I did not spend much time analyzing the situation. However, with my lack of time I had only come up with a design that was similar to a roof truss. Simi 
 https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
