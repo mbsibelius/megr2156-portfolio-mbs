@@ -42,6 +42,7 @@ To find the cross-sectional area of each member, I used the largest internal for
 ![calculations of finding cross sectional area of member](memberCrossSection.png)
 
 In order to calculate the total mass of members, I summed the lengths of each member and multiplied it by the cross-sectional area and density of the material.
+
 ![calculating mass of members](massMembers.png)
 
 Calculating the cross-sectional area required for the pins first required me to do first do an FBD. I chose joint D to analyze because it experiences the greatest force from the load. 
@@ -49,13 +50,14 @@ Calculating the cross-sectional area required for the pins first required me to 
 ![calculating cross-sectional area of pins](singleShearPinFBD.png)
 
 To model the pins in SolidWorks, I also calculated the radius and the diameter of the pins. In order to calculate the mass of the pins, I had to find the dimensions of the cross-sectional area for the members. To make this truss a single part, I chose to make the members 0.5mm shorter than the pin diameter. With this constraint, I determined the truss depth and used it as the pin length and the dimension of the CAD model.
+
 ![mass of pins](massPins.png)
 
 Summing both  the mass of the pins and the mass of each member:
 #### 4647.27 g + 0.053 g = 4647.323 g = 4.65 kg
 
-### Modeling CAD
-  To model the truss in SolidWorks, I started by setting up construction lines with the same dimensions as seen in the initial sketch.
+### CAD Model
+To model the truss in SolidWorks, I started by setting up construction lines with the same dimensions as seen in the initial sketch.
 ![construction line set up for modeling truss](projecta2CADSketch1.png)
 Then, after setting up the construction lines, I created the pins using the circle tool around all the joints of the truss. I followed up by using the offset tool on the construction lines and set them to 0.25mm less than the radius of the tool. Then I used the trim tool to trim all lines to create one profile.
 ![final sketch of profile of truss](projecta2CADSketch2.png)
@@ -67,6 +69,8 @@ After creating the material, the mass of the entire truss was 4606.52 g.
 ![solidworks mass of truss](projecta2Mass.png)
 Comparing the mass of the truss I got from calculations to the CAD model of it there is only a
 #### 100 x ((4647.323-4605.52) / 4606.52 ) = 0.910 percent error
+
+The link to the CAD file is at the bottom of this page.
 
 
 ## Decide
