@@ -31,7 +31,7 @@ To make sure I had calculated my internal forces correctly, I used an online tru
 
 ### Cross-Sectional Areas & Mass
   To find the cross-sectional area of each member, I used the largest internal force experienced by the truss. By using the largest internal force, we could find the minimum thickness required for each member. 
-![calculations of finding cross sectional area of member](membersCrossSection.png)
+![calculations of finding cross sectional area of member](memberCrossSection.png)
 In order to calculate the total mass of members, I summed the lengths of each member and multiplied it by the cross-sectional area and density of the material.
 ![calculating mass of members](massMembers.png)
 Calculating the cross-sectional area required for the pins first required me to do first do an FBD. I chose joint D to analyze because it experiences the greatest force from the load. 
