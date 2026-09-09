@@ -101,11 +101,19 @@ For my truss geometry I tried to make it similar to the roof of a truss. Because
 For the cross sectional area of the member I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier. 
 
 ## Communicate
+From the start of this assignment I had made the mistake of starting late and under estimated the amount of time it would take for me to complete the assignment. When drafting my initial truss design I did not do enough research to make a truss that supported the loads shown properly and ended up with a zero force member.
+My lack of organization for this project made me spend significantly more time calculating internal forces, cross-sectional area, and masses. Additionally, I had to change my data for the A500 steel halfway through my calculations because it did not have all the data I needed. I had underestimated the time it would take for me to complete this project and did not take time to plan out my workflow better.
 
 #### Links used:
 Truss Analysis Calculator: https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
 
 Calculating Bolt Capacity Video: https://youtu.be/VHd_eSXwbIc.
+
+Prompts used:
+
+- can you show me a model of buckling for all members in compression
+- can you calculate it again but with a rectangular cross section of 8.84 mm by 20.14 mm
+- can you show me the buckling stress for the members in compression
 
 ###### Link to CAD model: https://drive.google.com/file/d/1iw-bSKslxPwRai5A2qfZOkWMZSBFgW36/view?usp=drive_link
 
