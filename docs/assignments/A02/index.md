@@ -69,9 +69,9 @@ The final CAD model ended up with small radii around each joint. Before I could 
 
 After creating the material, the mass of the entire truss was 4606.52 g. 
 
-![solidworks mass of truss](projecta2Mass.png)
+![solidworks mass of truss](projecta2Mass1.png)
 
-Comparing the mass of the truss I got from calculations to the CAD model of it there is only a
+Comparing the mass of the truss I got from calculations to the CAD model of it, there is only a
 #### 100 x ((4647.323-4605.52) / 4606.52 ) = 0.910 percent error
 
 The link to the CAD file is at the bottom of this page.
