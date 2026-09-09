@@ -17,8 +17,8 @@
 
 The initial research for this truss analysis started with looking at the diagram given and finding out the material properties of A500 steel. Due to having a late start to this assignment I did not spend much time analyzing the situation and went with the first design that came to my mind. I placed a point in the middle of the top member and connected points D and C to it labeling it point E.
 ![initial sketch of truss](initialSketch.png)
-then through google I found a document provided by company with yield strength, density, and bulk modulus on it.
-![material properties of A500 steel used](ASTM_A500_Grade_B.pdf)
+then through google I found a document provided by Eagle Steel with the yield strength, density, and bulk modulus of ASTM A500 Grade B steel.
+![material properties of A500 steel used](ASTM_A500_Grade_B_Steel.png)
 
 
 https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
