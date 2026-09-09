@@ -1,7 +1,11 @@
 # A3 – [Topic]
 
 ## Objective
-
+- Use axial deflection modeling to design its dimensions
+- Use parametric design to determine a bars length
+- Introduce you to FEA (Finite Element Analysis)
+- Introduce you to linking dimensions to appropriate parameters in CAD.
+- Compare and contrast the different analysis
 
 ## Analyze
 
@@ -9,5 +13,4 @@
 ## Decide
 
 
-## Communicate
-
+## Communicate 
