@@ -13,13 +13,28 @@
 
 ## Analyze
 
-#### df
 
 The initial research for this truss analysis started with looking at the diagram given and finding out the material properties of A500 steel. Due to having a late start to this assignment I did not spend much time analyzing the situation and went with the first design that came to my mind. I placed a point in the middle of the top member and connected points D and C to it labeling it point E.
 ![initial sketch of truss](initialSketch.png)
 then through google I found a document provided by Eagle Steel with the yield strength, density, and bulk modulus of ASTM A500 Grade B steel.
-![material properties of A500 steel used](ASTM_A500_Grade_B_Steel.png)
+![material properties of A500 steel used](ASTM_A500_GradeB_Steel.png)
 
+#### Internal Forces 
+  I analyzed the internal force experienced of each member through method of joints. I chose to use method of joints because calculating each joint on a small truss would not be that difficult. To make it easier to write out the equations I used the ratio of each respective side to the hypotenuse.
+![joint FBD 1](jointFBD1.png)
+I chose to start at the joints with a load to see if I could find my first internal force. I then moved to joint E to make a relationship between joint D and C through member EC and ED. Using the relationship between ED and EC and the equations for CD from joints C and D I was able to find my next relationship between CA and DB. Using the CD equations, the CA and DB relationship, and the EC and ED relationship I found that member CD was a zero force member. Next I set up the equations for joints A and B to find the remaining equations before solving numerically.
+![joint FBD 2](jointFBD2.png)
+After finding the equations for Joints A and B I rewrote all the relations and equations found earlier to solve them all numerically. I chose to organize the equations like this to make it easier to show how I solved for forces symbolically before numerically and to make it easier to scan and upload
+
+  To make sure I had calculated my internal forces correctly I used an online truss analysis calculator to compare to mine.
+![screenshot of calculations report of truss analysis](trussCalculator.png)
+
+#### Cross Sectional Areas & Mass
+To find the cross sectional area of each member I used the largest internal force experienced by the truss. By using the largest internal force we could find the minimum thickness required for each member. 
+![calculations of finding cross sectional area of member](membersCrossSection.png)
+In order to calculate the total mass of members I summed the lengths of each member and multiplied it by the cross sectional area and density of material.
+
+For Calculating the Cross Sectional Area
 
 https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
 https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
