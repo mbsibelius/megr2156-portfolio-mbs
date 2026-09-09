@@ -87,21 +87,21 @@ In order to prevent each member from failing due to buckling, I would change the
 
 ### Part 2 – Pin Connections
 
-In order to figure this out I compared the shear capacity of the pin to the bearing capacity of the member. I used the equations for calculating bolt capacity and bearing capacity from the video linked below.
+In order to figure this out, I compared the shear capacity of the pin to the bearing capacity of the member. I used the equations for calculating bolt capacity and bearing capacity from the video linked below.
 
 ![calculating bearing capacity](singleShearCapCalculations.png)
 
-From the calculations the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure I would increase the diameter of the pins.
+From the calculations, the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes, the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure, I would increase the diameter of the pins.
 
 
 ## Decide
 
-For my truss geometry I tried to make it similar to the roof of a truss. Because of my late start to this project I chose only to put an additional joint at the mid point between points A and B and connect it to joints C and D. I had chosen this simple geometry, in order to make my hand calculations easier and shorter so I could finish the project before the deadline. 
+For my truss geometry, I tried to make it similar to the roof of a truss. Because of my late start to this project, I chose only to put an additional joint at the midpoint between points A and B and connect it to joints C and D. I had chosen this simple geometry in order to make my hand calculations easier and shorter so I could finish the project before the deadline. 
 
-For the cross sectional area of the member I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier. 
+For the cross-sectional area of the member, I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier. 
 
 ## Communicate
-From the start of this assignment I had made the mistake of starting late and under estimated the amount of time it would take for me to complete the assignment. When drafting my initial truss design I did not do enough research to make a truss that supported the loads shown properly and ended up with a zero force member.
+From the start of this assignment, I had made the mistake of starting late and underestimating the amount of time it would take for me to complete the assignment. When drafting my initial truss design, I did not do enough research to make a truss that supported the loads shown properly and ended up with a zero-force member.
 My lack of organization for this project made me spend significantly more time calculating internal forces, cross-sectional area, and masses. Additionally, I had to change my data for the A500 steel halfway through my calculations because it did not have all the data I needed. I had underestimated the time it would take for me to complete this project and did not take time to plan out my workflow better.
 
 #### Links used:
