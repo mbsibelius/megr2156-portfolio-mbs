@@ -14,29 +14,44 @@
 ## Analyze
 
 
-The initial research for this truss analysis started with looking at the diagram given and finding out the material properties of A500 steel. Due to having a late start to this assignment I did not spend much time analyzing the situation and went with the first design that came to my mind. I placed a point in the middle of the top member and connected points D and C to it labeling it point E.
+The initial research for this truss analysis started with looking at the diagram given and finding out the material properties of A500 steel. Due to having a late start to this assignment, I did not spend much time analyzing the situation and went with the first design that came to my mind. I placed a point in the middle of the top member and connected points D and C to it, labeling it point E.
 ![initial sketch of truss](initialSketch.png)
-then through google I found a document provided by Eagle Steel with the yield strength, density, and bulk modulus of ASTM A500 Grade B steel.
+Then, through Google, I found a document provided by Eagle Steel with the yield strength, density, and bulk modulus of ASTM A500 Grade B steel.
 ![material properties of A500 steel used](ASTM_A500_GradeB_Steel.png)
 
-#### Internal Forces 
-  I analyzed the internal force experienced of each member through method of joints. I chose to use method of joints because calculating each joint on a small truss would not be that difficult. To make it easier to write out the equations I used the ratio of each respective side to the hypotenuse.
+### Internal Forces 
+  I analyzed the internal forces experienced by each member through the method of joints. I chose to use the method of joints because calculating each joint on a small truss would not be that difficult. To make it easier to write out the equations, I used the ratio of each respective side to the hypotenuse.
 ![joint FBD 1](jointFBD1.png)
-I chose to start at the joints with a load to see if I could find my first internal force. I then moved to joint E to make a relationship between joint D and C through member EC and ED. Using the relationship between ED and EC and the equations for CD from joints C and D I was able to find my next relationship between CA and DB. Using the CD equations, the CA and DB relationship, and the EC and ED relationship I found that member CD was a zero force member. Next I set up the equations for joints A and B to find the remaining equations before solving numerically.
+I chose to start at the joints with a load to see if I could find my first internal force. I then moved to joint E to make a relationship between joint D and C through member EC and ED. Using the relationship between ED and EC and the equations for CD from joints C and D, I was able to find my next relationship between CA and DB. Using the CD equations, the CA and DB relationship, and the EC and ED relationship I found that member CD was a zero-force member. Next, I set up the equations for joints A and B to find the remaining equations before solving numerically.
 ![joint FBD 2](jointFBD2.png)
-After finding the equations for Joints A and B I rewrote all the relations and equations found earlier to solve them all numerically. I chose to organize the equations like this to make it easier to show how I solved for forces symbolically before numerically and to make it easier to scan and upload
+After finding the equations for Joints A and B, I rewrote all the relations and equations found earlier to solve them all numerically. I chose to organize the equations like this to make it easier to show how I solved for forces symbolically before numerically and to make it easier to scan and upload
 
-  To make sure I had calculated my internal forces correctly I used an online truss analysis calculator to compare to mine.
+To make sure I had calculated my internal forces correctly, I used an online truss analysis calculator to compare to mine.
 ![screenshot of calculations report of truss analysis](trussCalculator.png)
 
-#### Cross Sectional Areas & Mass
-To find the cross sectional area of each member I used the largest internal force experienced by the truss. By using the largest internal force we could find the minimum thickness required for each member. 
+### Cross-Sectional Areas & Mass
+  To find the cross-sectional area of each member, I used the largest internal force experienced by the truss. By using the largest internal force, we could find the minimum thickness required for each member. 
 ![calculations of finding cross sectional area of member](membersCrossSection.png)
-In order to calculate the total mass of members I summed the lengths of each member and multiplied it by the cross sectional area and density of material.
+In order to calculate the total mass of members, I summed the lengths of each member and multiplied it by the cross-sectional area and density of the material.
+![calculating mass of members](massMembers.png)
+Calculating the cross-sectional area required for the pins first required me to do first do an FBD. I chose joint D to analyze because it experiences the greatest force from the load. 
+![calculating cross-sectional area of pins](singleShearPinFBD.png)
+To model the pins in SolidWorks, I also calculated the radius and the diameter of the pins. In order to calculate the mass of the pins, I had to find the dimensions of the cross-sectional area for the members. To make this truss a single part, I chose to make the members 0.5mm shorter than the pin diameter. With this constraint, I determined the truss depth and used it as the pin length and the dimension of the CAD model.
+![mass of pins](massPins.png)
+Summing both  the mass of the pins and the mass of each member:
+#### 4647.27 g + 0.053 g = 4647.323 g = 4.65 kg
 
-For Calculating the Cross Sectional Area
-
-https://www.youtube.com/watch?v=M5iuXqwEf7c&t=1s
+### Modeling CAD
+  To model the truss in SolidWorks, I started by setting up construction lines with the same dimensions as seen in the initial sketch.
+![construction line set up for modeling truss](projecta2CADSketch1.png)
+Then, after setting up the construction lines, I created the pins using the circle tool around all the joints of the truss. I followed up by using the offset tool on the construction lines and set them to 0.25mm less than the radius of the tool. Then I used the trim tool to trim all lines to create one profile.
+![final sketch of profile of truss](projecta2CADSketch2.png)
+Finally, I used the extrude command and set the length to 20.14 mm, from the calculation I had done earlier.
+![extrude command of Truss](projecta2CADExtrude1.png)
+The final CAD model ended up with small radii around each joint. Before I could find the mass of the model in SolidWorks, I first had to create a profile for the A500 from the document of Eagle Steel.
+![material dialog window](projecta2CustomMat.png)
+After creating the material, the mass of the entire truss was 4606.52 g. 
+![solidworks mass of truss](projecta2Mass.png)
 https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
 
 ## Decide
@@ -63,4 +78,8 @@ In order to figure this out I compared the shear capacity of the pin to the bear
 https://www.structuremag.org/article/design-of-bolted-connections-per-the-2015-nds/
 
 ## Communicate
+
+#### Links used:
+Truss Analysis Calculator: https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
+
 
