@@ -72,13 +72,6 @@ Comparing the mass of the truss I got from calculations to the CAD model of it t
 
 The link to the CAD file is at the bottom of this page.
 
-
-## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
-For my truss geometry I tried to make it similar to the roof of a truss. Because of my late start to this project I chose only to put an additional joint at the mid point between points A and B and connect it to joints C and D. I had chosen this simple geometry, in order to make my hand calculations easier and shorter so I could finish the project before the deadline.
-
-For the Cross sectional area I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier.
-
 ### Part 1 – Truss Members
 
 Looking at the truss analysis document, we can see that members BE, EC, and CA(0, 4, and 5) are under tension and members BD, DE, and EA (1, 2, and 6) are under compression. However, member 3 (DC) is the only zero-force member and would not fail under load. Members BE, EC, and CA would fail through yielding before they fracture. Members BD, DE, and EA would fail under buckling. According to the document attached, Grade B ASTM A500 Steel has a carbon content less than or equal to 0.30%, making it more ductile.
@@ -90,13 +83,28 @@ In order to prevent each member from failing due to buckling, I would change the
 
 ### Part 2 – Pin Connections
 
-In order to figure this out I compared the shear capacity of the pin to the bearing capacity of the member. Using the equations provided from the video linked here https://youtu.be/VHd_eSXwbIc. From the calculations the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure I would increase the diameter of the pins.
+In order to figure this out I compared the shear capacity of the pin to the bearing capacity of the member. I used the equations for calculating bolt capacity and bearing capacity from the video linked below.
+
+![calculating bearing capacity]()
+
+From the calculations the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure I would increase the diameter of the pins.
+
 https://www.structuremag.org/article/design-of-bolted-connections-per-the-2015-nds/
+
+
+## Decide
+
+For my truss geometry I tried to make it similar to the roof of a truss. Because of my late start to this project I chose only to put an additional joint at the mid point between points A and B and connect it to joints C and D. I had chosen this simple geometry, in order to make my hand calculations easier and shorter so I could finish the project before the deadline.
+
+For the Cross sectional area I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier.
+
 
 ## Communicate
 
 #### Links used:
 Truss Analysis Calculator: https://www.trussanalysis.com/free?cat=custom&cnodes=0%7E0%7Er%7E0%7E0_1.2%7E0%7Ep%7E0%7E0_0.4%7E-0.3%7Ef%7E0%7E-20_0.8%7E-0.3%7Ef%7E0%7E20_0.6%7E0%7Ef%7E0%7E0&cmems=0%7E4%7E178%7E140000_0%7E2%7E178%7E140000_2%7E4%7E178%7E140000_2%7E3%7E178%7E140000_3%7E4%7E178%7E140000_3%7E1%7E178%7E140000_1%7E4%7E178%7E140000
+
+Calculating Bolt Capacity Video: https://youtu.be/VHd_eSXwbIc.
 
 Link to CAD model: https://drive.google.com/file/d/1iw-bSKslxPwRai5A2qfZOkWMZSBFgW36/view?usp=drive_link
 
