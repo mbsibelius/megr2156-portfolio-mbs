@@ -64,9 +64,13 @@ Then, after setting up the construction lines, I created the pins using the circ
 Finally, I used the extrude command and set the length to 20.14 mm, from the calculation I had done earlier.
 ![extrude command of Truss](projecta2CADExtrude1.png)
 The final CAD model ended up with small radii around each joint. Before I could find the mass of the model in SolidWorks, I first had to create a profile for the A500 from the document of Eagle Steel.
+
 ![material dialog window](projecta2CustomMat.png)
+
 After creating the material, the mass of the entire truss was 4606.52 g. 
+
 ![solidworks mass of truss](projecta2Mass.png)
+
 Comparing the mass of the truss I got from calculations to the CAD model of it there is only a
 #### 100 x ((4647.323-4605.52) / 4606.52 ) = 0.910 percent error
 
