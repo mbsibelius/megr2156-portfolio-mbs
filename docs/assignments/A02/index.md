@@ -85,19 +85,16 @@ In order to prevent each member from failing due to buckling, I would change the
 
 In order to figure this out I compared the shear capacity of the pin to the bearing capacity of the member. I used the equations for calculating bolt capacity and bearing capacity from the video linked below.
 
-![calculating bearing capacity]()
+![calculating bearing capacity](singleShearCapCalculations.png)
 
 From the calculations the pins have a lower capacity of 48 kN compared to the bearing capacity of  59.2 kN. Using the NDS yield modes the pin would fail in mode 1 where the capacity of the bearing is greater than the capacity of the pin. In order to reduce the likelihood of this mode of failure I would increase the diameter of the pins.
-
-https://www.structuremag.org/article/design-of-bolted-connections-per-the-2015-nds/
 
 
 ## Decide
 
-For my truss geometry I tried to make it similar to the roof of a truss. Because of my late start to this project I chose only to put an additional joint at the mid point between points A and B and connect it to joints C and D. I had chosen this simple geometry, in order to make my hand calculations easier and shorter so I could finish the project before the deadline.
+For my truss geometry I tried to make it similar to the roof of a truss. Because of my late start to this project I chose only to put an additional joint at the mid point between points A and B and connect it to joints C and D. I had chosen this simple geometry, in order to make my hand calculations easier and shorter so I could finish the project before the deadline. 
 
-For the Cross sectional area I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier.
-
+For the cross sectional area of the member I chose to make the thickness of the members 0.5mm less than the diameter of the pins. I chose to do this in order to make modeling the truss as one part easier. 
 
 ## Communicate
 
@@ -106,7 +103,7 @@ Truss Analysis Calculator: https://www.trussanalysis.com/free?cat=custom&cnodes=
 
 Calculating Bolt Capacity Video: https://youtu.be/VHd_eSXwbIc.
 
-Link to CAD model: https://drive.google.com/file/d/1iw-bSKslxPwRai5A2qfZOkWMZSBFgW36/view?usp=drive_link
+###### Link to CAD model: https://drive.google.com/file/d/1iw-bSKslxPwRai5A2qfZOkWMZSBFgW36/view?usp=drive_link
 
 
 
