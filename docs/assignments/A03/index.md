@@ -10,7 +10,6 @@
 ## Analyze
 Before starting anything, the first thing I did was watch the two videos attached to the assignment on parametric design and how to conduct an FEA in SolidWorks. To calculate for the length of the shaft I solved for L from the direct tension deflection relationship. 
 
-
 ### Hand Calculations
 ![image of hand calculations of relationship]
 After solving symbolically, I moved on to calculating the minimum and maximum length for a rod given a 1 in diameter with the specified values for F and the Elastic Modulus. For the design I chose to go with the minimal Length I had calculated and used the appropriate Young's modulus of 8.5*10^6 psi and a force of 500 lbs.
@@ -33,7 +32,7 @@ Then I used the extrude tool and set the length to the length variable I set ear
 
 Before I could run the FEA, I first had to create a custom aluminum material that matched my original parameters. I had opted to only assign my chosen values to yield strength and shear modulus and left all other variables assigned to their default values.
 
-![custom material aluminum](projecta3CustmoMat.png)
+![custom material aluminum](projecta3CustomMat.png)
 
 ### Modify Design Parameters
 
