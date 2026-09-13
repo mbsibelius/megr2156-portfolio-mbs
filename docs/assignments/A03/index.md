@@ -18,7 +18,7 @@ After solving symbolically, I moved on to calculating the minimum and maximum le
 
 ### CAD Modeling and FEA
 
-Then I went into SolidWorks, and before sketching anything, I went into the equations folder to create variables for the diameter, force, Young's modulus, and maximum deflection and assigned them their respective values. The Length variable was assigned the Length equation that was calculated earlier. 
+Then I went into SolidWorks, and before sketching anything, I went into the equations folder to create variables for the diameter, force, Young's modulus, and maximum deflection and assigned them their respective values. The Length variable was assigned the Length equation that was calculated earlier. Link to the model and statics report below.
 
 ![Image of parametric equations](projecta3ParametricEquations.png)
 
@@ -75,3 +75,7 @@ Looking at the stress concentration factor chart, considering the size of the pi
 
 ## Communicate 
 In this project, I learned that parametric modeling significantly speeds up the redesign process significantly easier, because of being able to update all dimensions in one place instead of having to modify each dimension separately. I spent 10 hours working on this project from start to finish.
+
+#### CAD Files:
+Statics Report: https://drive.google.com/file/d/1nrzwbx60AHL9LZKWczZUDJJLi_H-S5dT/view?usp=drive_link
+CAD Model: https://drive.google.com/file/d/1i7MFXun7fdrG3smFzwKb9oLBh65jUmPQ/view?usp=drive_link
