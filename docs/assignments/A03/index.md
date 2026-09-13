@@ -8,34 +8,56 @@
 - Compare and contrast the different analysis
 
 ## Analyze
-Watched videos to learn how to parametrically design and conduct FEA
-Chose a diameter and wrote down equations to calculate min and max length for a fixed diameter. Chose to use min length.
-Chose to start with the largest Young's modulus first.
-Made a custom material to fit the properties of aluminum given. Did not input shear modulus or Poisson's ratio.
-Made global variables for each property as well as the length of the bar using the direct tension equation.
+Before starting anything, the first thing I did was watch the two videos attached to the assignment on parametric design and how to conduct an FEA in SolidWorks. To calculate for the length of the shaft I solved for L from the direct tension deflection relationship. 
 
-(20%) Topic: Modify Design Parameters
 
-Instructions:
+### Hand Calculations
+![image of hand calculations of relationship]
+After solving symbolically, I moved on to calculating the minimum and maximum length for a rod given a 1 in diameter with the specified values for F and the Elastic Modulus. For the design I chose to go with the minimal Length I had calculated and used the appropriate Young's modulus of 8.5*10^6 psi and a force of 500 lbs.
 
-Cycle through #2, change each of the design parameters, which include load and diameter. Keep the material and the fixture the same.
+![image of calculating min and max length]
 
-Decreased Load to 300 lbs; kept 1 in diameter.
+### CAD Modeling and FEA
 
-Looking at the original equation that I used to calculate the length of the bar, a decreased load would create a longer length.
+Then I went into SolidWorks, and before sketching anything, I went into the equations folder to create variables for the diameter, force, Young's modulus, and maximum deflection and assigned them their respective values. The Length variable was assigned the Length equation that was calculated earlier. 
 
-Increased Diameter to 5 in and kept 500 lbs
+![Image of parametric equations](projecta3ParametricEquations.png)
 
-Similar to the first answer an increased diameter would increase the length of the rod because the length of the rod would 
+Then created a sketch of a circle and assigned the diameter variable to the circle's diameter. 
 
-Before you calculate, take a guess if the length will increase, decrease, or stay the same. (You will not be penalized for guessing incorrectly.)
+![image of sketch](projecta3Diameter.png)
+
+Then I used the extrude tool and set the length to the length variable I set earlier.
+
+![image of extrude](projecta3Length.png)
+
+Before I could run the FEA, I first had to create a custom aluminum material that matched my original parameters. I had opted to only assign my chosen values to yield strength and shear modulus and left all other variables assigned to their default values.
+
+![custom material aluminum](projecta3CustmoMat.png)
+
+### Modify Design Parameters
+
+#### Decreased Load
+The first parameter I modified was the load applied to the rod, and I decreased it from 500 to 300 lbs and kept the 1 in diameter. Looking at our Length equation, we can see that a smaller load would contribute to a longer length of the rod. A smaller stress applied to the rod would require a smaller strain, which would increase the Length given that we kept our deflection the same.
+
+![Decreased diameter](projecta3DecreasedLoad.png)
+
+#### Increased Diameter 
+Similar to the first answer, an increased diameter would increase the length of the rod because a smaller stress would require a smaller strain and therefore an increased length. 
+
+![Increased diameter](projecta3IncreasedDiam.png)
 
 ## Decide
-(5%) Report the axial deflection from your parametric hand-calculation and from your FEA. Calculate the percent difference between the two.
-From FEA, the displacement is 9.017*10^-3 in
+
+
+From the FEA done on the part, the displacement is 9.017*10^-3 in. The percent difference between the given max deflection and the deflection given by the FEA is around 0.18 %.
+![Calculated percent Differenc]()
+
 If there is a meaningful discrepancy, identify at least one likely source (e.g., assumptions in the hand-calc, boundary conditions, mesh density, material property inputs).
-If the two values are essentially the same, explain why you'd expect them to agree for this geometry and loading (e.g., no stress concentrations, simple axial loading, coarse mesh still adequate for a uniform cross-section).
+If the two values are essentially the same, explain why you'd expect them to agree for this geometry and loading (e.g., no stress concentrations, simple axial loading, coarse mesh still adequate for a uniform 
 Either way, state which result you'd trust more for this design and why.
+I think the values of the deflection are essentially the same, because of the simple axial loading, lack of stress concentrations, and the material properties and constraints. The simple axial loading and lack of stress leads to a simpler design
+![]()
 (5%) Now imagine a fairly substantial pin hole on the left side of the bar. Look up the stress concentration factor (Kt) for a hole in a flat bar in tension (Peterson's charts or Machinery's Handbook). Using your FEA's nominal stress away from the hole, estimate the peak stress at the hole and state whether it would still pass your safety factor. (Don’t redo the FEA!)
 (5%) Lessons Learned document mistakes made and actual time spent from start to finish.
 
