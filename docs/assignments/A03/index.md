@@ -64,6 +64,7 @@ The decision to make each of the given parameters global variables was so I coul
 
 ### FEA Axial Deflection
 From the FEA done on the part, the displacement is 9.017*10^-3 in. The percent difference between the given max deflection and the deflection given by the FEA is around 0.18 %.
+
 ![Calculated percent Difference](percentDiff.png)
 
 I think the values of the deflection are essentially the same because of the simple axial loading, lack of stress concentrations, and the material properties and constraints. The simple axial loading and lack of stress concentrations lead to a part that could be modeled with only 2 dimensions and gave less room for error when it came to hand calculations. Given the choice, I would trust the FEA more if I had more material properties available to me, but the more complex parts would require me to learn the software more to get more accurate results.
@@ -73,4 +74,4 @@ I think the values of the deflection are essentially the same because of the sim
 Looking at the stress concentration factor chart, considering the size of the pinhole, I would estimate K to be around ~ 3.7. The peak stress would then be estimated to be 2.4 ksi, well below the yield strength of the aluminum and within a factor of safety of 13. 
 
 ## Communicate 
-In this project, I learned that parametric modeling significantly speeds up the redesign process significantly easier, because of being able to update all dimensions in one place instead of having to modify each dimension separately. I learned that 
+In this project, I learned that parametric modeling significantly speeds up the redesign process significantly easier, because of being able to update all dimensions in one place instead of having to modify each dimension separately. I spent 10 hours working on this project from start to finish.
