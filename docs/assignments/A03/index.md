@@ -11,10 +11,12 @@
 Before starting anything, the first thing I did was watch the two videos attached to the assignment on parametric design and how to conduct an FEA in SolidWorks. To calculate for the length of the shaft I solved for L from the direct tension deflection relationship. 
 
 ### Hand Calculations
-![image of hand calculations of relationship]
+
+![image of hand calculations of relationship](symbolicEqns.png)
+
 After solving symbolically, I moved on to calculating the minimum and maximum length for a rod given a 1 in diameter with the specified values for F and the Elastic Modulus. For the design I chose to go with the minimal Length I had calculated and used the appropriate Young's modulus of 8.5*10^6 psi and a force of 500 lbs.
 
-![image of calculating min and max length]
+![image of calculating min and max length](handCalcLength.png)
 
 ### CAD Modeling and FEA
 
