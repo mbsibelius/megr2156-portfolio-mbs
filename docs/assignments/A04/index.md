@@ -67,11 +67,23 @@ After extruding the side profile of the mount. I created the hole for the front 
 
 ![motor hole feature](motorHoleFeaturee.png)
 
-Afterwards, I created the holes to attach the face of the motor to the mount. First, I created the hole and set its diameter to 3.4mm 
+Afterwards, I created the holes to attach the face of the motor to the mount. First, I created the hole and set its diameter to 3.4mm according to the instructions for the assignment. All holes are created as thru all.
 
+![bolt hole](boltHoleFeature.png)
 
+Then I created a sketch of a circle around the hole of the shaft and set its diameter to 22mm. Afterwards, I patterned the hole around the sketch.
 
-For the sake of the assignment and my time, I decided to calculate deflections without considering the holes put into the design. 
+![bolt hole patterning](boltHolePattern.png)
+
+The same dimensions and procedure were used to create the holes on feature 2. The patterning of the holes was set to the dimensions on the final sketch.
+
+![mounting hole pattern](mountingHolePattern.png)
+
+![final model](finalModelA4.png)
+
+### Drawing
+
+![drawing sheet](projectA4DrawingSheet.png)
 
 used this for calculating bending stress:
 https://mechanicalc.com/calculators/stress-concentration/
@@ -85,8 +97,13 @@ https://www.specialchem.com/plastics/guide/acrylonitrile-butadiene-styrene-abs-p
 ## Communicate
 
 #### Links to articles used:
+
+  Material properties taken from:
+https://www.specialchem.com/plastics/guide/acrylonitrile-butadiene-styrene-abs-plastic
+
   Designing motor mounts article:
 https://www.automate.org/motion-control/tech-papers/design-considerations-for-gearmotor-applications
+
   Designing 3d printed mounts article:
 https://www.tinkercad.com/things/avvN77l4yc1-tt-gear-motor-mount
 
