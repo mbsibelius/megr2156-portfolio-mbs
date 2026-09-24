@@ -7,7 +7,7 @@ Design a motor mount using the (Brushed 24V DC Gear Motor 3.6Kg.cm/46RPM w/ 99.5
 ## Analyze
 
 ### Research
-Before designing this mount, I did some initial research into what design considerations I should have when designing motor mounts by looking at the article linked at the bottom of the page. Looking at all the references and the materials we could make this mount from, I also looked at an article about designing 3d printed motor mounts specifically. The article is linked below. In order to make the model more accurate, I ignored the instruction to ignore the mass of the motor and calculated all values with the mass of the motor. I modeled the mass of the motor as a distributed load the size of its largest diameter given from the drawing provided by the website. I chose ABS as my material for the mount.
+Before designing this mount, I did some initial research into what design considerations I should have when designing motor mounts by looking at the article linked at the bottom of the page. Looking at all the references and the materials we could make this mount from, I also looked at an article about designing 3d printed motor mounts specifically. The article is linked below. To make the model more accurate, I ignored the instruction to exclude the motor's mass and calculated all values using the motor's mass. I modeled the mass of the motor as a distributed load the size of its largest diameter, given from the drawing provided by the website. I chose ABS as my material for the mount.
 
 ![image of motor measurements](motorDimensionsA4.png)
 
@@ -33,7 +33,7 @@ Because the thickness of feature 1 that minimizes deflection is larger than the 
 
 ### Feature 2
 
-When calculating the thickness of the mount with respect to yield strength, feature 2 was modeled as a cantilever beam with a moment on the end. The same 30 mm width of the mount was used in all calculations. For feature 2, when calculating with respect to yield strength, only the bending stress of a cantilever beam was used in the calculations.
+When calculating the thickness of the mount with respect to yield strength, feature 2 was modeled as a cantilever beam with a moment at the end. The same 30 mm width of the mount was used in all calculations. For feature 2, when calculating with respect to yield strength, only the bending stress of a cantilever beam was used in the calculations.
 
 ![figure 2 bending stress](figure2BendingStressCalc.png)
 
@@ -63,7 +63,7 @@ I dimensioned the sketch with respect to each feature's measurements using the g
 
 ![extruded front profile](extrudeFrontProfile.png)
 
-After extruding the side profile of the mount. I created the hole for the front face of the motor with a counterbore for the 2mm offset and a hole sized to 6.3mm for the shaft of the motor.
+After extruding the side profile of the mount. I created the hole for the front face of the motor with a counterbore for the 2mm offset and a hole sized to 6.5mm for the shaft of the motor.
 
 ![motor hole feature](motorHoleFeaturee.png)
 
@@ -83,18 +83,19 @@ The same dimensions and procedure were used to create the holes on feature 2. Th
 
 ### Drawing
 
-![drawing sheet](projectA4DrawingSheet.png)
-
-used this for calculating bending stress:
-https://mechanicalc.com/calculators/stress-concentration/
-
-Material properties taken from:
-https://www.specialchem.com/plastics/guide/acrylonitrile-butadiene-styrene-abs-plastic
+![drawing sheet](projectA4DrawingSheet.PNG)
 
 ## Decide
 
+### Feature 1
+The choice to keep the length of the mount to 30mm was made so that the motor could be properly attached to the mount with 1mm clearance around the mount. The thickness of feature 1 was set to 13.1mm was to minimize deflection of the feature to 0.00030mm and handle the yield strength of ABS. The 2mm counterbore was made so that the face of the motor could attach flush to the mount. The size of the hole of the shaft was set to 6.5 mm, and the size of the offset was set to 18.3mm to have a clearance fit for the shaft and the offset. No dimensions were given regarding the spacing of the holes; I assumed that the holes were equally spaced and spaced the holes the same on feature 1.
+
+### Feature 2
+The choice to make the length of feature 2 74.6mm was to keep it uniform to the dimensions of the mount to the motor. The thickness of feature 2 was set to 24.0mm for the same reasons as feature 1 to minimize deflection and handle the yield strength of ABS. The choice to make the holes the same size as feature 1 was to maintain consistency for the hardware of the mount. The choice to have 6 holes in feature 2 was to compensate for the length of feature 2 and increase the clamping force of the motor mount to the wall. The spacing of the pattern was done to keep uniformity of the pattern of the bolts.
 
 ## Communicate
+
+This project taught me that plastics can handle loads, but have lower stiffness compared to metals. Trying to accurately calculate the stresses and deflections of parts requires a lot of assumptions and knowledge on how to accurately model the part beforehand. The decision on how bolts should be patterned is something that I never had to consider before this project, but is something that would require more thought if the loads were significantly larger. Overall, this project took me around 18 hours total.
 
 #### Links to articles used:
 
