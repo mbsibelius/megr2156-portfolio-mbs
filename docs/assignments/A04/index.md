@@ -28,6 +28,15 @@ Then I calculated the thickness of feature 1 to minimize the deflection to a min
 
 ![figure 1 deflection](figure1DeflectionCalc3.png)
 
+Because the thickness of feature 1 that minimizes deflection is larger than the thickness that can handle the yield strength of the part. The final thickness of the part was set to be 13.1 mm.
+
+### Feature 2
+
+When calculating the thickness of the part with respect to yield strength, feature 2 was modeled as a cantilever beam with a moment on the end. The same 30 mm width of the part was used in all calculations.
+
+![figure 2 bending stress](figure2BendingStressCalc.png)
+
+![])()
 
 
 
