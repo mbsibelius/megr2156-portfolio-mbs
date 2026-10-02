@@ -12,6 +12,25 @@ Reflect on and document key engineering lessons learned throughout the process.
 ## Analyze
 used this link for material properties of astm a36 steel: https://pandapipe.com/blog/a36-steel-material-properties/
 
+used this link for finding fits and tolerances to have hole measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
+Treated the T- beam as a shaft and the bracket as a hole and determined the clearances using the tolerances given by the assignment. B classified as LC1, A classified as RC1, and C classified as LC1.
+
+### Feature E Stress
+height did not affect stress so width was calculated.
+
+
+### Feature C
+feature b was placed in the middle of the bracket in order to model the bracket as a beam with a concentrated load in the middle.
+
+used this link for finding transition fits and clearance fits: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
+
+
+
+### Feature B Deflection
+used thickness from feature b stress calculation since length of the the feature did not affect the stress experienced by the feature.
+
+### Feature E Deflection
+height did not impact the bending stress, but affects deflection, so width was used from deflection calculation.
 
 ## Decide
 
