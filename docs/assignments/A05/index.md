@@ -18,8 +18,7 @@ Treated the T- beam as a shaft and the bracket as a hole and determined the clea
 ### Feature E Stress
 height did not affect stress so width was calculated.
 
-
-### Feature C
+### Feature C Stress
 feature b was placed in the middle of the bracket in order to model the bracket as a beam with a concentrated load in the middle.
 
 used this link for finding transition fits and clearance fits: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
@@ -27,10 +26,17 @@ used this link for finding transition fits and clearance fits: https://www.coban
 
 
 ### Feature B Deflection
-used thickness from feature b stress calculation since length of the the feature did not affect the stress experienced by the feature.
+used thickness from feature b stress calculation since length of the the feature did not affect the stress experienced by the feature. Calculated for max length. Will go with length used in stress calculations
 
 ### Feature E Deflection
-height did not impact the bending stress, but affects deflection, so width was used from deflection calculation.
+height did not impact the bending stress, but affects deflection, so width was used from deflection calculation. From equation, we can see that a shorter feature height would lead to a shorter deflection. Therefore height of feature e was set to 
+
+
+height of part will be set to thickness of 
+
+### CAD
+I decided to go with the largest possible 
+For feature B the length was set to the radius
 
 ## Decide
 
