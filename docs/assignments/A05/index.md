@@ -37,6 +37,12 @@ height of part will be set to thickness of
 ### CAD
 I decided to go with the largest possible 
 For feature B the length was set to the radius
+### link design
+
+### Feature A
+bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
+stress concentration:
+https://www.valuedes.co.uk/stress-concentration.html
 
 ## Decide
 
