@@ -10,10 +10,13 @@ Create detailed multiview sketches illustrating dimensions derived from both str
 Reflect on and document key engineering lessons learned throughout the process.
 
 ## Analyze
-used pandapipes material properties sheet for of astm a36 steel: https://pandapipe.com/blog/a36-steel-material-properties/
+Before calculating anything Used Pandapipes material properties sheet for ASTM A36 steel; the website used is linked below. To get the dimensions for the clearances, I treated the T- beam as a shaft and the bracket as a hole. Measurement B was classified as LC1, A was classified as RC1, and C was classified as LC1 according to ANSI standards.
 
-used this link for finding fits and tolerances to have hole measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
-Treated the T- beam as a shaft and the bracket as a hole and determined the clearances using the tolerances given by the assignment. B classified as LC1, A classified as RC1, and C classified as LC1.
+![clearances and fits of bracket](bracketFitment.png)
+### Feature A Stress
+
+![featurea A calculations for stress](featureACalculationsStres.png)
+### Feature B Stress
 
 ### Feature E Stress
 height did not affect stress so width was calculated.
@@ -48,4 +51,9 @@ https://www.valuedes.co.uk/stress-concentration.html
 
 
 ## Communicate
+
+### Links used
+
+ASTM A36 steel material properties: https://pandapipe.com/blog/a36-steel-material-properties/
+Fits and tolerance measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
 
