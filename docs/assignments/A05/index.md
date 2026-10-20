@@ -10,7 +10,7 @@ Create detailed multiview sketches illustrating dimensions derived from both str
 Reflect on and document key engineering lessons learned throughout the process.
 
 ## Analyze
-used this link for material properties of astm a36 steel: https://pandapipe.com/blog/a36-steel-material-properties/
+used pandapipes material properties sheet for of astm a36 steel: https://pandapipe.com/blog/a36-steel-material-properties/
 
 used this link for finding fits and tolerances to have hole measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
 Treated the T- beam as a shaft and the bracket as a hole and determined the clearances using the tolerances given by the assignment. B classified as LC1, A classified as RC1, and C classified as LC1.
