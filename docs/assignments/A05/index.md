@@ -10,21 +10,35 @@ Create detailed multiview sketches illustrating dimensions derived from both str
 Reflect on and document key engineering lessons learned throughout the process.
 
 ## Analyze
-Before calculating anything Used Pandapipes material properties sheet for ASTM A36 steel; the website used is linked below. To get the dimensions for the clearances, I treated the T- beam as a shaft and the bracket as a hole. Measurement B was classified as LC1, A was classified as RC1, and C was classified as LC1 according to ANSI standards.
+Before calculating anything, I used the Pandapipes material properties sheet for ASTM A36 steel; the website used is linked below. To get the dimensions for the clearances, I treated the T- beam as a shaft and the bracket as a hole. Measurement B was classified as LC1, A as RC1, and C as LC1 according to ANSI standards.
 
 ![clearances and fits of bracket](bracketFitment.png)
 ### Feature A Stress
+Feature A was modeled as a cantilever beam that is fixed on end. 
 
-![featurea A calculations for stress](featureACalculationsStres.png)
+![feature A calculations for stress](featureACalculationsStress.png)
 ### Feature B Stress
+Feature B was modeled as an axially loaded bar.
 
-### Feature E Stress
-height did not affect stress so width was calculated.
-
+![featurea B calculations for stress](featureBCalculationsStress.png)
 ### Feature C Stress
-feature b was placed in the middle of the bracket in order to model the bracket as a beam with a concentrated load in the middle.
+Feature C was modeled as a beam supported on both ends with a point load in the middle.
+
+![feature C calculations for stress](featureCCalculationsStress.png)
+### Feature D Stress
+Feature D was modeled as an axially loaded bar.
+
+![feature D calculations for stress](featureDCalculationsStress.png)
+### Feature E Stress
+Height did not affect stress, so width was calculated.
+![feature E calculations for stress](featureECalculationsStress.png)
+
+
+
 
 used this link for finding transition fits and clearance fits: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
+
+## Deflection Calculations
 
 
 
