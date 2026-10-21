@@ -32,7 +32,7 @@ Feature D was modeled as an axially loaded bar. The length of the part was defin
 
 ![feature D calculations for stress](featureDCalculationsStress.png)
 ### Feature E Stress
-The width of the part was defined by the clearance requirement length of the part calculated did not affect stress, so the thickness was calculated.
+The width of the part was defined by the clearance requirement length of the part calculated did not affect stress, so the thickness was calculated. The feature was treated as a beam supported on one end with an evenly distributed load.
 
 ![feature E calculations for stress](featureECalculationsStress.png)
 
@@ -60,10 +60,11 @@ Calculated for the length of Feature B instead of thickness since the length of 
 
 ### Feature E Deflection
 ![feature E calculations for deflection](featureECalculationsDeflection.png)
-height did not impact the bending stress, but affects deflection, so width was used from deflection calculation. From equation, we can see that a shorter feature height would lead to a shorter deflection. Therefore height of feature e was set to 
+Height did not impact the bending stress, but it affects deflection, so width was used from the deflection calculation. From the equation, we can see that a shorter feature height would lead to a shorter deflection. Therefore, the height of feature e was set to 
 
+### Sketch of Part According to Deflection
 
-height of part will be set to thickness of 
+![sketch of part according to deflection](stressSketch.png)
 
 ### link design
 
