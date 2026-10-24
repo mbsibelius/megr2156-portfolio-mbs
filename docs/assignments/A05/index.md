@@ -1,4 +1,4 @@
-# A5 – [Topic]
+# A5 – [Bracket Design]
 
 ## Objective
 Conduct stress analysis to determine appropriate dimensions for structural features.
@@ -66,12 +66,11 @@ Height did not impact the bending stress, but it affects deflection, so width wa
 
 ![sketch of part according to deflection](stressSketch.png)
 
-### link design
+### Link design
+Before all calculations, the fitments of the hole were decided first. According to the specifications, the size of the hole for the bracket would be classified as RC7, and the 1" hole would be classified as an FN1 fit.
+
 
 ### Feature A
-bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
-stress concentration:
-https://www.valuedes.co.uk/stress-concentration.html
 
 ## Decide
 
@@ -79,7 +78,9 @@ https://www.valuedes.co.uk/stress-concentration.html
 ## Communicate
 
 ### Links used
-
+Bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
+Stress concentration:
+https://www.valuedes.co.uk/stress-concentration.html
 ASTM A36 steel material properties: https://pandapipe.com/blog/a36-steel-material-properties/
 Fits and tolerance measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
 
