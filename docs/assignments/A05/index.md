@@ -1,13 +1,14 @@
 # A5 – [Bracket Design]
 
 ## Objective
-Conduct stress analysis to determine appropriate dimensions for structural features.
-Generate free body diagrams (FBDs) to visualize forces and constraints for each feature.\
-Identify and document known and unknown variables, assumptions, and algebraic models for stress calculations.
-Perform stiffness analysis to establish minimum required dimensions based on deflection constraints.
-Compare stress and stiffness analyses to ensure structural integrity and compliance with given constraints.
-Create detailed multiview sketches illustrating dimensions derived from both stress and stiffness analyses.
-Reflect on and document key engineering lessons learned throughout the process.
+
+- Conduct stress analysis to determine appropriate dimensions for structural features.
+- Generate free body diagrams (FBDs) to visualize forces and constraints for each feature.
+- Identify and document known and unknown variables, assumptions, and algebraic models for stress calculations.
+- Perform stiffness analysis to establish minimum required dimensions based on deflection constraints.
+- Compare stress and stiffness analyses to ensure structural integrity and compliance with given constraints.
+- Create detailed multiview sketches illustrating dimensions derived from both stress and stiffness analyses.
+- Reflect on and document key engineering lessons learned throughout the process.
 
 ## Analyze
 Before calculating anything, I used the Pandapipes material properties sheet for ASTM A36 steel; the website used is linked below. To get the dimensions for the clearances, I treated the T- beam as a shaft and the bracket as a hole. Measurement B was classified as LC1, A as RC1, and C as LC1 according to ANSI standards.
@@ -71,7 +72,7 @@ Height did not affect the bending stress, but it did affect deflection, so width
 ### Link design
 Before all calculations, the hole fitments were determined. According to the specifications, the size of the hole for the bracket would be classified as RC7, and the 1" hole would be classified as an FN1 fit.
 The sizes of both holes only need accuracy up to 0.0001", which would only require broaching to achieve their desired dimensions according to the table below. To calculate the cross-sectional area of the link, bending stress was used to determine the thickness of the link, and the length was decided through axial stress. Stresses for both holes were calculated.
-![table of manufacturing processes](!)
+![table of manufacturing processes](table7Processes.png)
 
 ![calculations of link](linkCalcluations.png)
 
@@ -100,7 +101,6 @@ The final length of the link was only set to be the length of the span from the 
 ### Feature Modeling.
 For features A, B, and C, they were all modeled and calculated per the instructions of the assignment. For Feature D, it was modeled as an axially loaded bar because the only dimension that could be changed was the thickness of the feature, with C governing the length of the entire bracket. Feature E was modeled as a beam with an evenly distributed load on the bottom of the beam, because the height of the part was the only ungoverned dimension. The uniformly distributed load was chosen because its entire bottom surface contacts the body it assembles with.
 
-
 ## Communicate
 
 ### Lessons Learned
@@ -117,9 +117,8 @@ When calculating with minimizing deflection, an initial mistake in calculating t
 An initial assumption I made was that modeling feature E as an axially loaded block would end up calculating the height of the feature. Treating feature E as an axially loaded block would only change the thickness of the overall part or the length of the feature, but would not affect the height of the feature.
 
 ### Links used
-Bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
-Stress concentration:
-https://www.valuedes.co.uk/stress-concentration.html
-ASTM A36 steel material properties: https://pandapipe.com/blog/a36-steel-material-properties/
-Fits and tolerance measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
+- Bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
+- Stress concentration:https://www.valuedes.co.uk/stress-concentration.html
+- ASTM A36 steel material properties: https://pandapipe.com/blog/a36-steel-material-properties/
+- Fits and tolerance measurements: https://www.cobanengineering.com/Tolerances/ANSILocationalCleranceFits.asp
 
