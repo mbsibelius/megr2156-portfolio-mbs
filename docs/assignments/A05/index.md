@@ -60,22 +60,61 @@ Calculated for the length of Feature B instead of thickness since the length of 
 
 ### Feature E Deflection
 ![feature E calculations for deflection](featureECalculationsDeflection.png)
-Height did not impact the bending stress, but it affects deflection, so width was used from the deflection calculation. From the equation, we can see that a shorter feature height would lead to a shorter deflection. Therefore, the height of feature e was set to 
+Height did not affect the bending stress, but it did affect deflection, so width was used in the deflection calculation. From the equation, we can see that a shorter feature height would lead to a shorter deflection. Therefore, the height of feature e was set to 
 
 ### Sketch of Part According to Deflection
 
 ![sketch of part according to deflection](stressSketch.png)
 
+
+
 ### Link design
-Before all calculations, the fitments of the hole were decided first. According to the specifications, the size of the hole for the bracket would be classified as RC7, and the 1" hole would be classified as an FN1 fit.
+Before all calculations, the hole fitments were determined. According to the specifications, the size of the hole for the bracket would be classified as RC7, and the 1" hole would be classified as an FN1 fit.
+The sizes of both holes only need accuracy up to 0.0001", which would only require broaching to achieve their desired dimensions according to the table below. To calculate the cross-sectional area of the link, bending stress was used to determine the thickness of the link, and the length was decided through axial stress. Stresses for both holes were calculated.
+![table of manufacturing processes](!)
 
+![calculations of link](linkCalcluations.png)
 
-### Feature A
+![calculations of link](linkCalcluations1.png)
+
+![calculations of link](linkCalcluations2.png)
+
+![calculations of link](linkCalcluations3.png)
+
+The final thickness of the hole was decided based on the hole that attaches to the bracket. The final length was set to whichever hole required a longer length. 
+
+![calculations of link](linkCalcluations4.png)
+
+![calculations of link](linkCalcluations5.png)
+
+![calculations of link](linkCalcluations6.png)
+
+![calculations of link](linkCalcluations7.png)
+
+![calculations of link](linkCalcluations8.png)
+
+The final length of the link was only set to be the length of the span from the 1" hole for the sake of uniformity.
 
 ## Decide
 
+### Feature Modeling.
+For features A, B, and C, they were all modeled and calculated per the instructions of the assignment. For Feature D, it was modeled as an axially loaded bar because the only dimension that could be changed was the thickness of the feature, with C governing the length of the entire bracket. Feature E was modeled as a beam with an evenly distributed load on the bottom of the beam, because the height of the part was the only ungoverned dimension. The uniformly distributed load was chosen because its entire bottom surface contacts the body it assembles with.
+
 
 ## Communicate
+
+### Lessons Learned
+
+#### Governing failure mode Feature C
+
+For Feature C, stress governed the final dimension of the feature, requiring 1.050" as opposed to 0.386" for stiffness.  
+
+#### Error propagation:
+
+When calculating with minimizing deflection, an initial mistake in calculating the radius of Feature A created an error in calculating the length of Feature B. 
+
+#### Assumption sensitivity:
+An initial assumption I made was that modeling feature E as an axially loaded block would end up calculating the height of the feature. Treating feature E as an axially loaded block would only change the thickness of the overall part or the length of the feature, but would not affect the height of the feature.
 
 ### Links used
 Bearing stress calc: https://www.valuedes.co.uk/bearing-contact-worked-example.html
