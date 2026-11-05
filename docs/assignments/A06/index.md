@@ -25,24 +25,31 @@ Before creating sketches all dimensions calculated from the stress analysis of t
 ![parametric equations](parametricEquations.png)
 
 
-### Drawing of Bracket
+### Bracket Drawing
 
 ![Bracket Drawing](ProjectA6.JPG)
 
-### 
+### Link 
+All link dimensions were taken from stress calculations with only one dimension modeled parametrically. 
+
+![]
 
 ## Decide
-
+If you applied the tightest tolerance across your drawing by default, describe what happens to manufacturing cost or feasibility when a non-critical feature is held to an unnecessarily tight tolerance.
 ### Bracket Drawing
 
 
-Pick one dimension on your drawing where you applied a tighter tolerance class (e.g., X.XXX ± .005) and one where you applied a looser class (e.g., X.X ± .02). For each, identify whether that feature is a mating/functional surface (like a sliding fit interface) or a non-critical feature, and explain why that functional role justified the tolerance class you chose. If you applied the tightest tolerance across your drawing by default, describe what happens to manufacturing cost or feasibility when a non-critical feature is held to an unnecessarily tight tolerance.
-
 ## Communicate
 
-Initially all global variables were set to the values from the hand calculations. All feature dimension values were assigned from equations derived from hand and I added Force, Ultimate Strength, and Factor of Safety values. After correction the only value that changed from initial calculations was the thickness of Feature B. No problems occurred after correction and both the model and drawing reflected the new value after changing the value.
+Initially all global variables were set to the values from the hand calculations. All feature dimension values were assigned from equations derived from hand and I added Force, Ultimate Strength, and Factor of Safety values. After correction the only value that changed from initial calculations was the thickness of Feature B. No problems occurred after correction and both the model and drawing reflected the new value after changing the value. Below are the corrected values, equations, and drawing.
 
-The dimension
+![global variables corrected](globalVariablesA6Corrected.png)
+
+![parametric Equations Corrected](parametricEquationscorrected.png)
+
+![project A6 drawing corrected](ProjectA6Corrected.JPG)
+
+For the width of Feature C the dimensions were made to the X.XXX and is a functional surface. Feature C width requires precision to the 3rd decimal place because of the of dimensions a & b of the rigid body have to meet a certain clearance. However for the diameter of Feature A the dimensions were made to X.XX place and was a non-critical feature. The dimensions were made to be in the X.XX tolerance class in order to meet the minimum required cross section to handle the load applied. 
 
 
 Actual time it took from start to finish.
