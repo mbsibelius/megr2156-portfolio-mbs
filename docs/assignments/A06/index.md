@@ -58,7 +58,7 @@ Initially, all global variables were set to the values from the hand calculation
 
 ![project A6 drawing corrected](ProjectA6Corrected.JPG)
 
-For the width of Feature C, the dimensions were made to the X.XXX and are a functional surface. Feature C width requires precision to the 3rd decimal place because the dimensions of a & b of the rigid body have to meet a certain clearance. However, for the diameter of Feature A, the dimensions were made to X.XX place and were a non-critical feature. The dimensions were made to be in the X.XX tolerance class in order to meet the minimum required cross section to handle the load applied. 
+For the width of Feature C, the dimensions were made to the X.XXX and are a functional surface. Feature C width requires precision to the 3rd decimal place because the dimensions of a & b of the rigid body have to meet a certain clearance. However, for the diameter of Feature A, the dimensions were made to X.XX place and were a non-critical feature. The dimensions were made to be in the X.XX tolerance class in order to meet the minimum required cross-section to handle the load applied. 
 
 
 Actual time it took from start to finish.
