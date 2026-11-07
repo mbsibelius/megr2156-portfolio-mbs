@@ -38,6 +38,8 @@ All link dimensions were taken from stress calculations, with only one dimension
 
 ![link feature](linkFeature.png)
 
+![link drawing](ProjectA6Link.JPG)
+
 ## Decide
 
 ### Bracket Drawing
@@ -45,6 +47,7 @@ Tolerances applied to critical features are done to X.XXX or X.XXXX units, becau
 
 ### Link Drawing
 Tolerances applied to the link 
+
 ## Communicate
 
 Initially, all global variables were set to the values from the hand calculations. All feature dimension values were assigned from equations derived by hand, and I added Force, Ultimate Strength, and Factor of Safety values. After correction, the only value that changed from initial calculations was the thickness of Feature B. No problems occurred after correction, and both the model and drawing reflected the new value after changing it. Below are the corrected values, equations, and drawing.
