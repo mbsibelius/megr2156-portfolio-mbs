@@ -46,7 +46,7 @@ All link dimensions were taken from stress calculations, with only one dimension
 Tolerances applied to critical features are done to X.XXX or X.XXXX units, because of the required clearances of each fit. However, feature D and E's thickness is done to X.XXX to meet stress requirements. Other non-critical features are done to X.XX to minimize costs where possible. 
 
 ### Link Drawing
-Tolerances applied to the link 
+Dimensions of the 1-inch hole were changed to ensure a proper fit for FN1. The dimension of the hole was made with the assumption that the minimum shaft diameter is 1.0000". 
 
 ## Communicate
 
