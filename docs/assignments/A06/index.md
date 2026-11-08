@@ -43,11 +43,10 @@ All link dimensions were taken from stress calculations, with only one dimension
 ## Decide
 
 ### Bracket Drawing
-Tolerances applied to critical features are done to X.XXX or X.XXXX units, because of the required clearances of each fit. However, feature D and E's thickness is done to X.XXX to meet stress requirements. Other non-critical features are done to X.XX to minimize costs where possible. 
+Tolerances applied to critical features are specified to X.XXX or X.XXXX units due to the required clearances for each fit. However, features D and E's thickness is specified to X.XXX to meet stress requirements. Other non-critical features are done to X.XX to minimize costs where possible.
 
 ### Link Drawing
-Dimensions of the 1-inch hole were changed to ensure a proper fit for FN1. The dimension of the hole was made with the assumption that the minimum shaft diameter is 1.0000". 
-
+The dimensions of the 1-inch hole were adjusted to ensure a proper fit for FN1. The dimension of the hole was made with the assumption that the minimum shaft diameter is 1.0000". The bracket hole diameter was set to 0.754 with a tolerance of ±0.0034 to maintain RC7 clearances with respect to the class standard X.XXX tolerances.
 ## Communicate
 
 Initially, all global variables were set to the values from the hand calculations. All feature dimension values were assigned from equations derived by hand, and I added Force, Ultimate Strength, and Factor of Safety values. After correction, the only value that changed from initial calculations was the thickness of Feature B. No problems occurred after correction, and both the model and drawing reflected the new value after changing it. Below are the corrected values, equations, and drawing.
