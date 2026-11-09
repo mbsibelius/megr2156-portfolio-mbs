@@ -69,3 +69,9 @@ When it came to dimensioning the link, I thought the most important information 
 When it comes to dimensioning tolerances according to ANSI standards, I think the easiest way to communicate tolerances is not bilaterally but through minimum and maximum dimensions. Deciding whether the values calculated earlier represent a minimum/maximum size or a specified range. Tolerancing and 
 
 
+### Links of parts
+Bracket: https://drive.google.com/file/d/10mQg6InxneZ2nzuYpJTkJsqIUi-GlR_o/view?usp=drive_link
+Bracket Link: https://drive.google.com/file/d/10mQg6InxneZ2nzuYpJTkJsqIUi-GlR_o/view?usp=drive_link
+
+
+
