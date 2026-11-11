@@ -12,7 +12,10 @@
 - Reflect on key engineering lessons learned and time spent.
 
 ## Analyze
+Goal high stiffness, high strength, light weight
 
+### Iteration 1
+set the distributed force along where the strap is and defined it as a distributed mass 
 
 ## Decide
 
