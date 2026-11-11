@@ -14,13 +14,22 @@
 ## Analyze
 Goal high stiffness, high strength, light weight
 
-### Design 1 Iteration 1
+### Design 1
 set the distributed force along where the strap is and defined it as a distributed mass 
 
-Inner loop time: 1 hour
+2 iterations and passed 7% convergence Check
 
+
+Inner loop time: 1 hour 30 min
+
+Stress significantly higher than expected. Feature B was not modeled accuratley and stresses were higher than expected.
+
+### Design 2
 
 ## Decide
+
+### Design 1 Redesign
+Deflection was used to calculate length of feature B
 
 
 ## Communicate
