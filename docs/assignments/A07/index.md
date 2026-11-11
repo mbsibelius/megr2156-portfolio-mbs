@@ -14,8 +14,11 @@
 ## Analyze
 Goal high stiffness, high strength, light weight
 
-### Iteration 1
+### Design 1 Iteration 1
 set the distributed force along where the strap is and defined it as a distributed mass 
+
+Inner loop time: 1 hour
+
 
 ## Decide
 
