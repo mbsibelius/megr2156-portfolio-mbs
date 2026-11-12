@@ -36,10 +36,38 @@ Factor of safety study was set to automatic.
 Design 3 had the same problems as design 2 and did not meet minimum deflection. Stress concentrations in the same area but maximum stress had gone done 26.94% and deflection reduced by 28.402% with Max stress being 88120 psi, and max deflection being 0.01816 in
 FOS increased 36.111% to 0.49
 
-##### Design 4
+#### Design 4
 Passed convergence check after 2 iterations.
 
 Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max stress of 33330 psi located around the intersection of the chamfer and fillet of feature B. Maximum deflection decreased down to 0.1852. Mass was reduced down to 0.49 lbs. and a FOS of 1.1 was achieved. 
+
+### Bracket Link
+
+
+#### Design 1
+for the bracket link I designed both holes to be experiencing and modeled the fixtures as such. original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure was calculated to be 7088.89 psi. Calculations for interference pressure Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure. 
+
+
+Convergence Checks passed
+
+Design 1 experienced max stress of 93390 psi and a max deflection of 0.004698 in. Stress was concentrated around the sides of the 1 in hole interface and deflected the most towards the bottom of it. It experienced a minimum factor of safety of 1
+
+Design 1 weighed 0.37 lbs
+
+Time taken: 1 hour 20 min
+
+
+#### Design 2
+Max stress experienced by the part dropped significantly by 76.31% and experienced a max stress of 22590 psi concentrated similarly to design 1 and deflected similarly to design 1. Significant weight increase to 0.66lbs occurred from uniformly increasing diameter around the link.
+
+Time taken: 50 min
+Convergence check passed with 2%
+
+### Design 3
+
+Maximum stress was reduced down to 18540 psi with the same concentrations as previous design. maximum deflection decreased to 0.0005989 in deflecting in the same region as previous design. FOS increased to 2.006.
+
+Time Taken: 1 hour 20 min
 
 ## Decide
 
@@ -68,8 +96,29 @@ To better distribute stress concentration around feature B radius of fillet adde
 
 To model the forces experienced by the bracket more accurately I fixed the top of feature C along with the bottom face of feature E. 
 
+### Bracket Link
+
+#### Setting constraints
+I considered the hole connecting to feature A to be fixed in the 
+
+#### Design 1 Redesign
+1 in hole failed before transmitting load to the rest of the link. More material needs to be added to the 1 in hole and to conserve weight length between distance between holes was set to fixed length of 0.75 in. Outer diameter of hole was increased to 1.81in to better handle the stress concentrations and minimize the deflection of the part.
+
+Thickness of link was kept the same.
+
+#### Design 2 Redesign
+Constraints were not changed from original. To reduce mass I decreased the diameter around the hole to feature A to the original 1.20 in diameter in addition to decreasing the spacing between holes to 0.5 in. 
+To better distribute stress concentrations around. Thickness was recalculated with contact pressure from interference in mind and with respect to yield stress. For the sake of simplicity additional thickness of 0.256 in was added from hoop stress calculation of  1" hole. Additionally Parametric equations were with yield strength as opposed to ultimate strength
+
+### Design 3 Redesign
+
+
+
 ## Communicate
 
 
 ### Reflection
+
+#### Prompts used
+- what is the contact pressure of a shaft and hole with an interference of 0.0008 in, a hub with an outer diameter of 1.2 in, a 1 in shaft, and a hole sized to 0.9992 in. Both shaft and hole are made of the same material with an elastic modulus of 29007457 psi.
 
