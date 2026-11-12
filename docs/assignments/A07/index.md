@@ -29,7 +29,9 @@ Stress significantly higher than expected. Feature B was not modeled accuratley 
 ## Decide
 
 ### Design 1 Redesign
-Deflection was used to calculate length of feature B
+Initially Feature B was modeled inaccurately as a rod in tension. In this 1st redesign I would think of it more as a cantilever beam with moment applied to the free end. Looking at the deflection equation for it I chose to increase the thickness of the part as well as decrease the length to minimize deflection. 
+
+Looking where the stress was concentrated I opted to remove
 
 
 ## Communicate
