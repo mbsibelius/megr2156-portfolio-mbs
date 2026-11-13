@@ -17,11 +17,52 @@ The goal of this method is to modify the design to achieve the highest stiffness
 ### Bracket
 
 #### Design 1
-Constraints were applied to the roof set the distributed force along where the strap is and defined it as a distributed mass
+Constraints were put on the bottom of feature E. Force was modeled as a the distributed mass of 1600 lbs.
+
+![constraints](assigning load.png)
+
+
 
 2 iterations and passed 7% convergence Check
 Inner loop time: 1 hour 30 min
 Stress significantly higher than expected. Feature B was not modeled accuratley and stresses were higher than expected.
+
+**(Bracket) Design 1, Iteration 1**
+- max stress: 269,500 psi
+- max displacement: 0.08167 in
+- min FOS: blank
+- mass: 0.98 lbs
+- number of elements: 1,347
+
+**(Bracket) Design 1, Iteration 2**
+- max stress: 278,300 psi
+- max displacement: 0.08468 in
+- min FOS: blank
+- mass: 0.98 lbs
+- number of elements: 2,977
+
+**(Bracket) Design 1, Convergence Check**
+- Stress %: 3.21
+- Deflection %: 3.62
+- Factor of Safety %: #DIV/0!
+
+**(Bracket) Design 1, Iteration 3**
+- max stress: 313,200 psi
+- max displacement: 0.08869 in
+- min FOS: N/A
+- mass: 0.98 lbs
+- number of elements: 15,296
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Mid-point of feature B
+  - Displacement: End of feature A/End of feature B
+- Iteration 2
+  - Stress: Mid-point of feature B stretching towards the corners of the interface of feature B&C. Stress concentration around the peak of feature A connecting to feature B.
+  - Displacement: End of feature A/End of feature B
+- Iteration 3
+  - Stress: Stress concentration at corners of feature B attached to feature C and top of half circle of feature A
+  - Displacement: no note
 
 #### Design 2
 Required 3 iterations & higher mesh count
@@ -31,14 +72,115 @@ Reduction in thickness of Feature C led to feature D experiencing more stress an
 Design 2 redesign was able to reduce stress by 62.52% and deflection by 69.95%. however minimum deflection
 Factor of safety study was set to automatic.
 
+**(Bracket) Design 2, Iteration 1**
+- max stress: 101,000 psi
+- max displacement: 0.02454 in
+- min FOS: 0.36
+- mass: 0.6 lbs
+- number of elements: 2,397
+
+**(Bracket) Design 2, Iteration 2**
+- max stress: 127,600 psi
+- max displacement: 0.02508 in
+- min FOS: 0.36
+- mass: 0.6 lbs
+- number of elements: 9,105
+
+**(Bracket) Design 2, Convergence Check**
+- Stress %: 11.64
+- Deflection %: 1.09
+- Factor of Safety %: 0
+
+**(Bracket) Design 2, Iteration 3**
+- max stress: 135,700 psi
+- max displacement: 0.02517 in
+- min FOS: 0.27
+- mass: 0.6 lbs
+- number of elements: 15,708
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of feature A, End of feature B.
+- Iteration 2
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of Feature A/End of feature B
+- Iteration 3
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of Feature A/End of feature B
+
 #### Design 3
 Design 3 had the same problems as design 2 and did not meet minimum deflection. Stress concentrations in the same area but maximum stress had gone done 26.94% and deflection reduced by 28.402% with Max stress being 88120 psi, and max deflection being 0.01816 in
 FOS increased 36.111% to 0.49
+
+**(Bracket) Design 3, Iteration 1**
+- max stress: 73,790 psi
+- max displacement: 0.01757 in
+- min FOS: 0.49
+- mass: 0.61 lbs
+- number of elements: 2,759
+
+**(Bracket) Design 3, Iteration 2**
+- max stress: 85,890 psi
+- max displacement: 0.01795 in
+- min FOS: 0.42
+- mass: 0.61 lbs
+- number of elements: N/A
+
+**(Bracket) Design 3, Convergence Check**
+- Stress %: 7.58
+- Deflection %: 1.07
+- Factor of Safety %: blank
+
+**(Bracket) Design 3, Iteration 3**
+- max stress: 88,120 psi
+- max displacement: 0.01816 in
+- min FOS: 0.42
+- mass: 0.61 lbs
+- number of elements: 23,286
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Towards the edges of the fillet around the circumference of feature A
+  - Displacement: End of feature A/End of feature B
+- Iteration 2
+  - Stress: Mid-point of feature B
+  - Displacement: End of feature A/End of feature B
+- Iteration 3
+  - Stress: no note
+  - Displacement: no note
 
 #### Design 4
 Passed convergence check after 2 iterations.
 
 Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max stress of 33330 psi located around the intersection of the chamfer and fillet of feature B. Maximum deflection decreased down to 0.1852. Mass was reduced down to 0.49 lbs. and a FOS of 1.1 was achieved. 
+
+**(Bracket) Design 4, Iteration 1**
+- max stress: 33,680 psi
+- max displacement: 0.00184 in
+- min FOS: 1.1
+- mass: 0.49 lbs
+- number of elements: 3,827
+
+**(Bracket) Design 4, Iteration 2**
+- max stress: 33,330 psi
+- max displacement: 0.001852 in
+- min FOS: 1.1
+- mass: 0.49 lbs
+- number of elements: N/A
+
+**(Bracket) Design 4, Convergence Check**
+- Stress %: -0.52
+- Deflection %: 0.33
+- Factor of Safety %: blank
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Towards the edges of the fillet around the circumference of feature A
+  - Displacement: End of feature A/End of feature B
+- Iteration 2
+  - Stress: Mid-point of feature B
+  - Displacement: End of feature A/End of feature B
 
 ### Bracket Link
 
@@ -54,6 +196,32 @@ Design 1 weighed 0.37 lbs
 
 Time taken: 1 hour 20 min
 
+**(Link) Design 1, Iteration 1**
+- max stress: 91,590 psi
+- max displacement: 0.004634 in
+- min FOS: 0.4
+- mass: 0.37 lbs
+- number of elements: 2,983
+
+**(Link) Design 1, Iteration 2**
+- max stress: 93,390 psi
+- max displacement: 0.004698 in
+- min FOS: 0.39
+- mass: 0.37 lbs
+- number of elements: 4,038
+
+**(Link) Design 1, Convergence Check**
+- Stress %: 1.95
+- Deflection %: 1.37
+- Factor of Safety %: -2.53
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Stress concentrated on the sides of the inner wall of 1 in hole.
+  - Displacement: Bottom
+- Iteration 2
+  - Stress: no note
+  - Displacement: no note
 
 #### Design 2
 Max stress experienced by the part dropped significantly by 76.31% and experienced a max stress of 22590 psi concentrated similarly to design 1 and deflected similarly to design 1. Significant weight increase to 0.66lbs occurred from uniformly increasing diameter around the link.
@@ -61,17 +229,110 @@ Max stress experienced by the part dropped significantly by 76.31% and experienc
 Time taken: 50 min
 Convergence check passed with 2%
 
+**(Link) Design 2, Iteration 1**
+- max stress: 21,700 psi
+- max displacement: 0.0007415 in
+- min FOS: 1.671
+- mass: 0.66 lbs
+- number of elements: 2,122
+
+**(Link) Design 2, Iteration 2**
+- max stress: 22,590 psi
+- max displacement: 0.0007444 in
+- min FOS: 1.605
+- mass: 0.66 lbs
+- number of elements: 7,330
+
+**(Link) Design 2, Convergence Check**
+- Stress %: 2.01
+- Deflection %: 0.20
+- Factor of Safety %: -2.01
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of feature A, End of feature B.
+- Iteration 2
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of Feature A/End of feature B
+- Iteration 3
+  - Stress: Corners of front face connecting feature B to feature C.
+  - Displacement: Tip of Feature A/End of feature B
+
 ### Design 3
 
 Maximum stress was reduced down to 18540 psi with the same concentrations as previous design. maximum deflection decreased to 0.0005989 in deflecting in the same region as previous design. FOS increased to 2.006.
 
 Time Taken: 1 hour 20 min
 
+**(Link) Design 3, Iteration 1**
+- max stress: 18,070 psi
+- max displacement: 0.0005953 in
+- min FOS: 2.006
+- mass: 0.55 lbs
+- number of elements: 2,759
+
+**(Link) Design 3, Iteration 2**
+- max stress: 18,540 psi
+- max displacement: 0.0005989 in
+- min FOS: 1.956
+- mass: 0.55 lbs
+- number of elements: 7,749
+
+**(Link) Design 3, Convergence Check**
+- Stress %: 1.28
+- Deflection %: 0.30
+- Factor of Safety %: -1.26
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: Towards the edges of the fillet around the circumference of feature A
+  - Displacement: End of feature A/End of feature B
+- Iteration 2
+  - Stress: Mid-point of feature B
+  - Displacement: End of feature A/End of feature B
 
 ### Design 4
 All goals were met on Design 4. Maximum stress decreased to 0.4771 psi and concentrated around the midpoint of the hole of feature A. Maximum deflection decreased significantly to 1.308 nano in and displaced the most outside the outer diameter of feature A. FOS increased to 15 and met the minimum factor of safety required.
 
 Time Taken: 3 Hours
+
+**(Link) Design 4, Iteration 1**
+- max stress: 0.2709 psi
+- max displacement: 0.000000001266 in
+- min FOS: 15
+- mass: 0.25 lbs
+- number of elements: 3,672
+
+**(Link) Design 4, Iteration 2**
+- max stress: 0.331 psi
+- max displacement: 0.000000001292 in
+- min FOS: 15
+- mass: 0.25 lbs
+- number of elements: 7,134
+
+**(Link) Design 4, Convergence Check**
+- Stress %: 9.99
+- Deflection %: 1.02
+- Factor of Safety %: blank
+
+**(Link) Design 4, Iteration 3**
+- max stress: 0.4771 psi
+- max displacement: 0.000000001308 in
+- min FOS: 15
+- mass: 0.25 lbs
+- number of elements: 23799
+
+**Notes (max stress and displacement)**
+- Iteration 1
+  - Stress: In the middle of the hole of feature A peaking towards the fillet
+  - Displacement: At the bottom of feature A hole where it connects to the top of the 1 in hole.
+- Iteration 2
+  - Stress: A line through the mid-point of feature A hole al (text is cut off in the source sheet)
+  - Displacement: Greatest displacement along the midpoint of the outer diameter of feature A
+- Iteration 3
+  - Stress: no note
+  - Displacement: no note
 
 ## Decide
 
@@ -126,4 +387,3 @@ To reduce mass of the link outer diameter was reduced down to  1.22 in and dimen
 
 #### Prompts used
 - what is the contact pressure of a shaft and hole with an interference of 0.0008 in, a hub with an outer diameter of 1.2 in, a 1 in shaft, and a hole sized to 0.9992 in. Both shaft and hole are made of the same material with an elastic modulus of 29007457 psi.
-
