@@ -69,6 +69,12 @@ Maximum stress was reduced down to 18540 psi with the same concentrations as pre
 
 Time Taken: 1 hour 20 min
 
+
+### Design 4
+All goals were met on Design 4. Maximum stress decreased to 0.4771 psi and concentrated around the midpoint of the hole of feature A. Maximum deflection decreased significantly to 1.308 nano in and displaced the most outside the outer diameter of feature A. FOS increased to 15 and met the minimum factor of safety required.
+
+Time Taken: 3 Hours
+
 ## Decide
 
 #### Bracket
@@ -107,17 +113,18 @@ I considered the hole connecting to feature A to be fixed in the
 Thickness of link was kept the same.
 
 #### Design 2 Redesign
-Constraints were not changed from original. To reduce mass I decreased the diameter around the hole to feature A to the original 1.20 in diameter in addition to decreasing the spacing between holes to 0.5 in. 
-To better distribute stress concentrations around. Thickness was recalculated with contact pressure from interference in mind and with respect to yield stress. For the sake of simplicity additional thickness of 0.256 in was added from hoop stress calculation of  1" hole. Additionally Parametric equations were with yield strength as opposed to ultimate strength
+Constraints were not changed from original. To reduce mass I decreased the wall thickness around the hole of feature A to the original 1.20 in diameter, in addition to decreasing the spacing between holes to 0.25 in. 
+Thickness was recalculated with contact pressure from interference in mind and with respect to yield stress. For the sake of simplicity thickness was increased by 0.256 in from hoop stress calculation of 1 in hole. To better distribute stress concentrations around the inside surface of the 1 in hole. Additionally the ultimate strength variable was replaced with yield strength of the part to increase the FOS of the link.
 
 ### Design 3 Redesign
+Loads placed on 1" hole diameter were changed to a uniformly distributed load directed away from feature A and towards the 1 in hole  contacting only the bottom half of the surface. Additionally constraints were placed on the entire surface of the hole considering the pin makes full contact with the entire surface of the hole. Feature A's constraints were modified to fix the only top half of the surface of the hole contacting feature A, considering the small clearance of the running fit.
 
+To reduce mass of the link outer diameter was reduced down to  1.22 in and dimensioned to both of the links outer diameter. Additionally fillets with a radius equal to wall thickness were added to the front and back faces of the link. Lastly sketch was modified to cut out material from the space between the links.
 
 
 ## Communicate
 
-
-### Reflection
+#### Lessons Learned
 
 #### Prompts used
 - what is the contact pressure of a shaft and hole with an interference of 0.0008 in, a hub with an outer diameter of 1.2 in, a 1 in shaft, and a hole sized to 0.9992 in. Both shaft and hole are made of the same material with an elastic modulus of 29007457 psi.
