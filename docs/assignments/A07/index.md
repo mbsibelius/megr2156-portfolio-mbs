@@ -18,10 +18,11 @@ The goal of this method is to modify the design to achieve the highest stiffness
 
 #### Design 1
 Constraints were put on the bottom of feature E. Force was modeled as a the distributed mass of 1600 lbs.
+![setting weight](defininGravity.png)
 
-![constraints](assigning load.png)
+![constraints](assigningLoad.png)
 
-
+![geometry of bracket 1](fixedGeometry.png)
 
 2 iterations and passed 7% convergence Check
 Inner loop time: 1 hour 30 min
@@ -62,7 +63,10 @@ Stress significantly higher than expected. Feature B was not modeled accuratley 
   - Displacement: End of feature A/End of feature B
 - Iteration 3
   - Stress: Stress concentration at corners of feature B attached to feature C and top of half circle of feature A
-  - Displacement: no note
+  - Displacement: End of feature A/End of Feature B
+
+![design 1 final iteration displacement](design1Displacement.png)
+
 
 #### Design 2
 Required 3 iterations & higher mesh count
@@ -186,7 +190,7 @@ Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max str
 
 
 #### Design 1
-for the bracket link I designed both holes to be experiencing and modeled the fixtures as such. original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure was calculated to be 7088.89 psi. Calculations for interference pressure Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure. 
+For the bracket link I designed both holes to be experiencing and modeled the fixtures as such. original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure was calculated to be 7088.89 psi. Calculations for interference pressure Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure. 
 
 Convergence Checks passed
 
@@ -339,14 +343,18 @@ Time Taken: 3 Hours
 #### Bracket
 
 ### Design 1 Redesign
-I chose to keep the same general design of the bracket to see how l
-Initially Feature B was modeled inaccurately as a rod in tension. In this 1st redesign I modeled feature B as a cantilever beam with moment applied to the free end. Based on the deflection equation I chose to increase thickness  and decrease the length of feature B to minimize deflection & lower stress. Thickness was increased 100% and length was reduced 25%.
 
+Initially Feature B was modeled inaccurately as a rod in tension. To properly gauge thickness feature B was thought of as a cantilever beam with moment applied to the free end.
+
+![beam equation](beamEquation.png)
+
+Based on the deflection equation I chose to increase thickness and decrease the length of feature B to minimize deflection & lower stress. Increase in feature B's thickness exponentially increases moment of inertia in turn significantly decreasing deflection of beam.
+
+Thickness was increased 100% and length was reduced 25% and should reduce deflection of B by
 To minimize mass I opted to reduce the thickness of feature C & E by 50%
 
-Factor of safety was kept the same
-Parametric Equations were modified to modify geometry.
-I chose to keep the same general design of the bracket to see how little I could change from my initial design.
+![updated equations](design2ParametricEquations.png)
+
 
 ### Design 2 Redesign
 Both designs goal is to minimize changes to concept bracket as little as possible
