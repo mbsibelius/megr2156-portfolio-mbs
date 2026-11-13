@@ -278,7 +278,7 @@ Convergence check passed with 2%
   - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
   - Displacement: Bottom of 1 in hole.
 
-### Design 3
+#### Design 3
 
 Maximum stress was reduced down to 18540 psi with the same concentrations as previous design. 
 Maximum deflection decreased to 0.0005989 in deflecting in the same region as previous design. 
@@ -315,7 +315,7 @@ Time Taken: 1 hour 20 min
   - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
   - Displacement: Bottom of 1 in hole.
 
-### Design 4
+#### Design 4
 All goals were met on Design 4. Maximum stress decreased to 0.4771 psi and concentrated around the midpoint of the hole of feature A. Maximum deflection decreased significantly to 1.308 nano in and displaced the most outside the outer diameter of feature A. FOS increased to 15 and met the minimum factor of safety required.
 
 ![link Design4 Model](linkDesign4Model.png)
@@ -363,7 +363,7 @@ Time Taken: 3 Hours
 
 #### Bracket
 
-### Design 1 Redesign
+#### Design 1 Redesign
 
 Initially Feature B was modeled inaccurately as a rod in tension. To properly gauge thickness feature B was thought of as a cantilever beam with moment applied to the free end.
 
@@ -380,7 +380,7 @@ Constraints and forces were not changed.
 Time spent: 50 min
 
 
-### Design 2 Redesign
+#### Design 2 Redesign
 In order to better distribute the load throughout the bracket and reduce the deflection on the end of the tip, I opted to add a rib connecting the bottom of feature A up to the top face feature C. The thickness of the rib was set to have the same thickness as feature C. The angle was set 10 degrees in order to minimize mass and still provide stiffness.
 
 To minimize stress experienced by feature D and reduce deflection, thickness was increased by 0.1 in, and length of bracket was increased by 0.1 in. Additionally I opted to add a symmetric fillet connecting the bottom face of feature C to the front face of feature B to reduce the stress concentration where feature B connects to feature C. 
@@ -391,7 +391,7 @@ Time Spent: 50 min
 
 ![design 3 equations](design3Equations.png)
 
-### Design 3 Redesign
+#### Design 3 Redesign
 
 To better distribute stress concentration around feature B radius of fillet added in design 3 increased to connect to the front face of the bracket with additional fillets added to the side. Added fillets reach from feature B's right and left hand side to the outside of the bracket. 
 To reduce stress concentrations on the back of feature B and minimize deflection rib added in design 3 was removed and replaced by an extrusion of 0.25 in of the back face where feature A,B and C connect. Width of the feature was limited by the width of feature B to reduce mass gain. Lastly Chamfer was added around circumference of feature A connecting to feature B.
@@ -409,14 +409,14 @@ Time Spent: 1 hour 20 min
 ### Bracket Link
 
 
-#### Design 1 Redesign
+##### Design 1 Redesign
 1 in hole failed before transmitting load to the rest of the link. More material needs to be added to the 1 in hole and to conserve weight distance between holes was set to a fixed length of 0.75 in. Outer diameter of hole was increased to 1.81in to better handle the stress concentrations and minimize the deflection of the from the bottom.
 
 Thickness of link was kept the same to conserve mass. Additionally constraints and applied loads were kept the same in order to observe any changes to stress distribution.
 
 Time spent: 40 min
 
-#### Design 2 Redesign
+##### Design 2 Redesign
 Constraints were not changed from previous iteration to optimize for designed load.
 
 To reduce mass I decreased the wall thickness around the hole of feature A to the original 1.20 in diameter, in addition to decreasing the spacing between holes to 0.25 in.
@@ -429,7 +429,7 @@ Additionally the ultimate strength variable was replaced with yield strength of 
 
 Time Spent: 1 hour
 
-### Design 3 Redesign
+#### Design 3 Redesign
 
 Loads placed on 1" hole diameter were changed to a uniformly distributed load directed away from feature A and towards the 1 in hole  contacting only the bottom half of the surface. This was done to model load applied to the 1 in shaft with more accuracy.
 
