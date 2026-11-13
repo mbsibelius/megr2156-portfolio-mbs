@@ -45,7 +45,7 @@ Stress significantly higher than expected. Feature B was not modeled accuratley 
 **(Bracket) Design 1, Convergence Check**
 - Stress %: 3.21
 - Deflection %: 3.62
-- Factor of Safety %: #DIV/0!
+- Factor of Safety %: N/A
 
 **(Bracket) Design 1, Iteration 3**
 - max stress: 313,200 psi
@@ -53,6 +53,8 @@ Stress significantly higher than expected. Feature B was not modeled accuratley 
 - min FOS: N/A
 - mass: 0.98 lbs
 - number of elements: 15,296
+  
+![design 1 final iteration displacement](design1Displacement.png)
 
 **Notes (max stress and displacement)**
 - Iteration 1
@@ -65,16 +67,15 @@ Stress significantly higher than expected. Feature B was not modeled accuratley 
   - Stress: Stress concentration at corners of feature B attached to feature C and top of half circle of feature A
   - Displacement: End of feature A/End of Feature B
 
-![design 1 final iteration displacement](design1Displacement.png)
+
 
 
 #### Design 2
-Required 3 iterations & higher mesh count
-Failed in the same areas as design 1.
-Deflection behaved the same
-Reduction in thickness of Feature C led to feature D experiencing more stress and deflecting more. Stress concentrations exceed ultimate strength of 58015 psi.
-Design 2 redesign was able to reduce stress by 62.52% and deflection by 69.95%. however minimum deflection
-Factor of safety study was set to automatic.
+
+![design 2 model](design2Model.png)
+
+Required 3 iterations Failed in the same areas as design 1. Deflection behaved the same as desig1.Reduction in thickness of Feature C led to feature D experiencing more stress and deflecting more. Stress concentrations exceed ultimate strength of 58015 psi.
+Design 2 redesign was able to reduce stress by 62.52% and deflection by 69.95%. This time a FOS study was done and was set to autometic.
 
 **(Bracket) Design 2, Iteration 1**
 - max stress: 101,000 psi
@@ -102,6 +103,12 @@ Factor of safety study was set to automatic.
 - mass: 0.6 lbs
 - number of elements: 15,708
 
+![design 2 stress](design2Stress.png)
+
+![design 2 displacement](design2Displacement)
+
+![design 2 FOS](design2FOS)
+
 **Notes (max stress and displacement)**
 - Iteration 1
   - Stress: Corners of front face connecting feature B to feature C.
@@ -114,8 +121,10 @@ Factor of safety study was set to automatic.
   - Displacement: Tip of Feature A/End of feature B
 
 #### Design 3
-Design 3 had the same problems as design 2 and did not meet minimum deflection. Stress concentrations in the same area but maximum stress had gone done 26.94% and deflection reduced by 28.402% with Max stress being 88120 psi, and max deflection being 0.01816 in
-FOS increased 36.111% to 0.49
+
+![design 3 model](deesign3Model.png)
+
+Design 3 had the same problems as design 2 and did not meet minimum deflection. Stress concentrated around the thinnest part of the fillet around the circumference of feature A where feature A & B interface. Additionally on the opposite side of the feature B stress concentrated around the same area. Maximum stress went down 26.94% and deflection reduced by 28.40% with max stress being 88120 psi, and max deflection being 0.01816 in. Lastly FOS increased by 36.111% to 0.49.
 
 **(Bracket) Design 3, Iteration 1**
 - max stress: 73,790 psi
@@ -129,7 +138,7 @@ FOS increased 36.111% to 0.49
 - max displacement: 0.01795 in
 - min FOS: 0.42
 - mass: 0.61 lbs
-- number of elements: N/A
+- number of elements: 12159
 
 **(Bracket) Design 3, Convergence Check**
 - Stress %: 7.58
@@ -148,15 +157,17 @@ FOS increased 36.111% to 0.49
   - Stress: Towards the edges of the fillet around the circumference of feature A
   - Displacement: End of feature A/End of feature B
 - Iteration 2
-  - Stress: Mid-point of feature B
+  - Stress: Mid-point of feature B stretching towards the edges of the fillet around the circumference of feature A.
   - Displacement: End of feature A/End of feature B
 - Iteration 3
-  - Stress: no note
-  - Displacement: no note
+  - Stress: Mid-point of feature B
+  - Displacement: End of feature A/End of feature B
 
 #### Design 4
-Passed convergence check after 2 iterations.
 
+![design 4 model](design4Model.png)
+
+Passed convergence check after 2 iterations.
 Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max stress of 33330 psi located around the intersection of the chamfer and fillet of feature B. Maximum deflection decreased down to 0.1852. Mass was reduced down to 0.49 lbs. and a FOS of 1.1 was achieved. 
 
 **(Bracket) Design 4, Iteration 1**
@@ -176,7 +187,7 @@ Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max str
 **(Bracket) Design 4, Convergence Check**
 - Stress %: -0.52
 - Deflection %: 0.33
-- Factor of Safety %: blank
+- Factor of Safety %: 0
 
 **Notes (max stress and displacement)**
 - Iteration 1
@@ -188,15 +199,19 @@ Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max str
 
 ### Bracket Link
 
-
 #### Design 1
-For the bracket link I designed both holes to be experiencing and modeled the fixtures as such. original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure was calculated to be 7088.89 psi. Calculations for interference pressure Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure. 
 
-Convergence Checks passed
+For the bracket link I designed both holes to be experiencing a bearing contact stress from a cylinder and modeled the fixtures as such. Original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure I calculated to be ~35000 psi. Calculations for interference pressure were validated by Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure.
+
+Entire surface of feature A's hole was fixed. Contact pressure and bearing stress were Applied to the entire circumference of the 1 in hole. 
+
+![link constraints](linkDesignConstraints.png)
+
+![link loads applied](linkDesignLoading)
+
+![bracket link 1 model](linkDesign1Model.png)
 
 Design 1 experienced max stress of 93390 psi and a max deflection of 0.004698 in. Stress was concentrated around the sides of the 1 in hole interface and deflected the most towards the bottom of it. It experienced a minimum factor of safety of 1
-
-Design 1 weighed 0.37 lbs
 
 Time taken: 1 hour 20 min
 
@@ -222,13 +237,16 @@ Time taken: 1 hour 20 min
 **Notes (max stress and displacement)**
 - Iteration 1
   - Stress: Stress concentrated on the sides of the inner wall of 1 in hole.
-  - Displacement: Bottom
+  - Displacement: Bottom of 1 in hole.
 - Iteration 2
-  - Stress: no note
-  - Displacement: no note
+  - Stress: Same area as iteration 1.
+  - Displacement: Bottom of 1 in hole.
 
 #### Design 2
-Max stress experienced by the part dropped significantly by 76.31% and experienced a max stress of 22590 psi concentrated similarly to design 1 and deflected similarly to design 1. Significant weight increase to 0.66lbs occurred from uniformly increasing diameter around the link.
+
+Max stress experienced by the part dropped significantly by 76.31% and experienced a max stress of 22590 psi concentrated in the same areas of design 1 and deflected similarly to design 1. Significant weight increase to 0.66lbs occurred from uniformly increasing diameter around the link. 
+
+![linkDesign2Model](linkDesign2Model.png)
 
 Time taken: 50 min
 Convergence check passed with 2%
@@ -254,18 +272,19 @@ Convergence check passed with 2%
 
 **Notes (max stress and displacement)**
 - Iteration 1
-  - Stress: Corners of front face connecting feature B to feature C.
-  - Displacement: Tip of feature A, End of feature B.
+  - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
+  - Displacement: Bottom of 1 in hole.
 - Iteration 2
-  - Stress: Corners of front face connecting feature B to feature C.
-  - Displacement: Tip of Feature A/End of feature B
-- Iteration 3
-  - Stress: Corners of front face connecting feature B to feature C.
-  - Displacement: Tip of Feature A/End of feature B
+  - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
+  - Displacement: Bottom of 1 in hole.
 
 ### Design 3
 
-Maximum stress was reduced down to 18540 psi with the same concentrations as previous design. maximum deflection decreased to 0.0005989 in deflecting in the same region as previous design. FOS increased to 2.006.
+Maximum stress was reduced down to 18540 psi with the same concentrations as previous design. 
+Maximum deflection decreased to 0.0005989 in deflecting in the same region as previous design. 
+FOS increased to 2.006.
+
+![link design 3](linkDesign3.png)
 
 Time Taken: 1 hour 20 min
 
@@ -290,14 +309,16 @@ Time Taken: 1 hour 20 min
 
 **Notes (max stress and displacement)**
 - Iteration 1
-  - Stress: Towards the edges of the fillet around the circumference of feature A
-  - Displacement: End of feature A/End of feature B
+  - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
+  - Displacement: Bottom of 1 in hole.
 - Iteration 2
-  - Stress: Mid-point of feature B
-  - Displacement: End of feature A/End of feature B
+  - Stress: Stress concentrations along the mid line of 1 in hole running from the front to the back of the link.
+  - Displacement: Bottom of 1 in hole.
 
 ### Design 4
 All goals were met on Design 4. Maximum stress decreased to 0.4771 psi and concentrated around the midpoint of the hole of feature A. Maximum deflection decreased significantly to 1.308 nano in and displaced the most outside the outer diameter of feature A. FOS increased to 15 and met the minimum factor of safety required.
+
+![link Design4 Model](linkDesign4Model.png)
 
 Time Taken: 3 Hours
 
@@ -348,50 +369,97 @@ Initially Feature B was modeled inaccurately as a rod in tension. To properly ga
 
 ![beam equation](beamEquation.png)
 
-Based on the deflection equation I chose to increase thickness and decrease the length of feature B to minimize deflection & lower stress. Increase in feature B's thickness exponentially increases moment of inertia in turn significantly decreasing deflection of beam.
+Based on the deflection equation I chose to increase thickness and decrease the length of feature B to minimize deflection & lower stress. Increase in feature B's thickness exponentially increases moment of inertia in turn significantly decreasing deflection of beam. Thickness was increased 100% and length was reduced 25% and should reduce deflection by 92.97%. Increased section moduli and a shorter beam length also reduce stress by 85.94%
 
-Thickness was increased 100% and length was reduced 25% and should reduce deflection of B by
-To minimize mass I opted to reduce the thickness of feature C & E by 50%
+To minimize mass I opted to reduce the thickness of feature C & E by 50% of its original length.
+
+Constraints and forces were not changed.
 
 ![updated equations](design2ParametricEquations.png)
 
+Time spent: 50 min
+
 
 ### Design 2 Redesign
-Both designs goal is to minimize changes to concept bracket as little as possible
-In order to better distribute the load throughout the bracket and reduce the deflection on the end of the tip, I opted to add a rib connecting the bottom of feature A up to the top face feature c. The thickness of the rib was set to have the same thickness as feature C. The angle was set 10 degrees in order to minimize mass and still provide stiffness.
-In order to keep the length of feature B I opted to add a Symetric fillet connecting the bottom face of feature C to the front face of feature B. 
-To minimize stress experienced by feature D and reduce deflection thickness was increased by 0.1 in. Additionally Length of bracket was increased by 0.1 in. To conserve mass feature C's thickness was reduced by 0.20 in.
+In order to better distribute the load throughout the bracket and reduce the deflection on the end of the tip, I opted to add a rib connecting the bottom of feature A up to the top face feature C. The thickness of the rib was set to have the same thickness as feature C. The angle was set 10 degrees in order to minimize mass and still provide stiffness.
 
-Time it took to complete Design 2-3 of Bracket: ~3 hours
+To minimize stress experienced by feature D and reduce deflection, thickness was increased by 0.1 in, and length of bracket was increased by 0.1 in. Additionally I opted to add a symmetric fillet connecting the bottom face of feature C to the front face of feature B to reduce the stress concentration where feature B connects to feature C. 
+
+To conserve mass feature C's thickness was reduced by 0.20 in.
+
+Time Spent: 50 min
+
+![design 3 equations](design3Equations.png)
 
 ### Design 3 Redesign
-To better distribute stress concentration around feature B radius of fillet added in design 3 increased to connect to the front face of the bracket with additional Fillets added to the side. Added fillets reach from feature B's right and left hand side to the outside of the bracket. The angle of the rib added in design 3 was flipped to create an angle from the bottom of feature A. Rib Angle was removed and instead extends 0.25 in out to increase material around feature B and distribute stress concentration. Chamfer was added around circumference of feature A connecting to feature B to distribute stress concentrations. Feature E, D, and C thickness was reduced to reduce masss.
+
+To better distribute stress concentration around feature B radius of fillet added in design 3 increased to connect to the front face of the bracket with additional fillets added to the side. Added fillets reach from feature B's right and left hand side to the outside of the bracket. 
+To reduce stress concentrations on the back of feature B and minimize deflection rib added in design 3 was removed and replaced by an extrusion of 0.25 in of the back face where feature A,B and C connect. Width of the feature was limited by the width of feature B to reduce mass gain. Lastly Chamfer was added around circumference of feature A connecting to feature B.
+
+Feature E, D, and C's thickness was reduced to reduce mass.
+
+![design 4 equations](design4Equations.png)
 
 To model the forces experienced by the bracket more accurately I fixed the top of feature C along with the bottom face of feature E. 
 
+![design 4 constraints](design4AddedGeometry.png)
+
+Time Spent: 1 hour 20 min
+
 ### Bracket Link
 
-#### Setting constraints
-I considered the hole connecting to feature A to be fixed in the 
 
 #### Design 1 Redesign
-1 in hole failed before transmitting load to the rest of the link. More material needs to be added to the 1 in hole and to conserve weight length between distance between holes was set to fixed length of 0.75 in. Outer diameter of hole was increased to 1.81in to better handle the stress concentrations and minimize the deflection of the part.
+1 in hole failed before transmitting load to the rest of the link. More material needs to be added to the 1 in hole and to conserve weight distance between holes was set to a fixed length of 0.75 in. Outer diameter of hole was increased to 1.81in to better handle the stress concentrations and minimize the deflection of the from the bottom.
 
-Thickness of link was kept the same.
+Thickness of link was kept the same to conserve mass. Additionally constraints and applied loads were kept the same in order to observe any changes to stress distribution.
+
+Time spent: 40 min
 
 #### Design 2 Redesign
-Constraints were not changed from original. To reduce mass I decreased the wall thickness around the hole of feature A to the original 1.20 in diameter, in addition to decreasing the spacing between holes to 0.25 in. 
-Thickness was recalculated with contact pressure from interference in mind and with respect to yield stress. For the sake of simplicity thickness was increased by 0.256 in from hoop stress calculation of 1 in hole. To better distribute stress concentrations around the inside surface of the 1 in hole. Additionally the ultimate strength variable was replaced with yield strength of the part to increase the FOS of the link.
+Constraints were not changed from previous iteration to optimize for designed load.
+
+To reduce mass I decreased the wall thickness around the hole of feature A to the original 1.20 in diameter, in addition to decreasing the spacing between holes to 0.25 in.
+
+Thickness was recalculated with contact pressure from interference in addition to applied load. To better distribute stress concentrations around the inside surface of the 1 in hole thickness of the link was increased by 0.256 in from hoop stress calculation of 1 in hole.  
+
+Additionally the ultimate strength variable was replaced with yield strength of the part to increase the FOS of the link.
+
+![link 3 equations](linkDesign3Equations.png)
+
+Time Spent: 1 hour
 
 ### Design 3 Redesign
-Loads placed on 1" hole diameter were changed to a uniformly distributed load directed away from feature A and towards the 1 in hole  contacting only the bottom half of the surface. Additionally constraints were placed on the entire surface of the hole considering the pin makes full contact with the entire surface of the hole. Feature A's constraints were modified to fix the only top half of the surface of the hole contacting feature A, considering the small clearance of the running fit.
+
+Loads placed on 1" hole diameter were changed to a uniformly distributed load directed away from feature A and towards the 1 in hole  contacting only the bottom half of the surface. This was done to model load applied to the 1 in shaft with more accuracy.
+
+![link 4 loads](linkDesign4Distributedload.png)
+
+Additionally constraints were placed on the entire surface of the 1 in hole considering the press fitted pin strongly resists deformation of the hole. Feature A's constraints were modified to fix the only top half of the surface of the hole contacting feature A. Considering the small clearance of the running fit the bottom half of the hole of feature A would not make contact with the shaft and would be free to move around.
+
+![link 4 constraints](design4Constraints.png)
 
 To reduce mass of the link outer diameter was reduced down to  1.22 in and dimensioned to both of the links outer diameter. Additionally fillets with a radius equal to wall thickness were added to the front and back faces of the link. Lastly sketch was modified to cut out material from the space between the links.
 
+![link 4 equations](linkDesign4Equations.png)
+
+Time Spent: 1 hour 40 mins
 
 ## Communicate
 
-#### Lessons Learned
+Time spent on FEA: 12 Hours
+Time spent on Documentation: 4 Hours
+
+#### Reflection
+
+Working on this assignment I learned that you can have correct calculations from poorly modeled problems. From FEA I learned that laying down the correct constraints and loads has a greater impact on stress and deflections compared to optimizing geometry. I learned that higher mesh counts are able to more accurately depict stress concentrations and where they occur. I learned that structuring the approach to any kind of analysis saves you time from having to organize your work. FEA can only help you optimize for only one set of constraints and applied loads.
+
+#### Links to Final Design of parts
+
+Bracket 3: https://drive.google.com/file/d/12l8antniPuxIdXACS5OrWOCKRAcGJWWE/view?usp=sharing
+Bracket 4: https://drive.google.com/file/d/17HQBk8nxrFzp8-IhcIAzam1sA52BWZEd/view?usp=sharing 
+Link 3: https://drive.google.com/file/d/1h7J9XQkMWZm3U3GuXcDyKwTzK1gr1LT6/view?usp=sharing
+Link 4: https://drive.google.com/file/d/1uLcdxBusgoumxTZpC1S0A9KhxxlhCB7S/view?usp=sharing
 
 #### Prompts used
 - what is the contact pressure of a shaft and hole with an interference of 0.0008 in, a hub with an outer diameter of 1.2 in, a 1 in shaft, and a hole sized to 0.9992 in. Both shaft and hole are made of the same material with an elastic modulus of 29007457 psi.
