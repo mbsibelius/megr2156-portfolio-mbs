@@ -12,13 +12,12 @@
 - Reflect on key engineering lessons learned and time spent.
 
 ## Analyze
-Goal high stiffness, high strength, light weight
-
+The goal of this method is to modify the design to achieve the highest stiffness, strength, and lightest weight possible.
 
 ### Bracket
 
 #### Design 1
-set the distributed force along where the strap is and defined it as a distributed mass 
+Constraints were applied to the roof set the distributed force along where the strap is and defined it as a distributed mass
 
 2 iterations and passed 7% convergence Check
 Inner loop time: 1 hour 30 min
@@ -46,7 +45,6 @@ Design 4 saw a 54.36% decrease in max stress compared to design 3 with a max str
 
 #### Design 1
 for the bracket link I designed both holes to be experiencing and modeled the fixtures as such. original calculations did not account for interference and instead treated both holes as experiencing only bearing stress. However, the 1 in hole and shaft system should've been modeled with interference pressure and bearing stress from the strap. Using the formula from the lecture contact pressure was calculated to be 7088.89 psi. Calculations for interference pressure Claude's, Google Gemini, and ChatGPT's answers. All three agreed on a contact pressure of 3545.46 psi contact pressure. 
-
 
 Convergence Checks passed
 
