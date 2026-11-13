@@ -18,7 +18,7 @@ The goal of this method is to modify the design to achieve the highest stiffness
 
 #### Design 1
 Constraints were put on the bottom of feature E. Force was modeled as a the distributed mass of 1600 lbs.
-![setting weight](defininGravity.png)
+![setting weight](definingGravity.png)
 
 ![constraints](assigningLoad.png)
 
@@ -105,9 +105,9 @@ Design 2 redesign was able to reduce stress by 62.52% and deflection by 69.95%. 
 
 ![design 2 stress](design2Stress.png)
 
-![design 2 displacement](design2Displacement)
+![design 2 displacement](design2Displacement.png)
 
-![design 2 FOS](design2FOS)
+![design 2 FOS](design2FOS.png)
 
 **Notes (max stress and displacement)**
 - Iteration 1
@@ -122,7 +122,7 @@ Design 2 redesign was able to reduce stress by 62.52% and deflection by 69.95%. 
 
 #### Design 3
 
-![design 3 model](deesign3Model.png)
+![design 3 model](design3Model.png)
 
 Design 3 had the same problems as design 2 and did not meet minimum deflection. Stress concentrated around the thinnest part of the fillet around the circumference of feature A where feature A & B interface. Additionally on the opposite side of the feature B stress concentrated around the same area. Maximum stress went down 26.94% and deflection reduced by 28.40% with max stress being 88120 psi, and max deflection being 0.01816 in. Lastly FOS increased by 36.111% to 0.49.
 
@@ -433,7 +433,7 @@ Time Spent: 1 hour
 
 Loads placed on 1" hole diameter were changed to a uniformly distributed load directed away from feature A and towards the 1 in hole  contacting only the bottom half of the surface. This was done to model load applied to the 1 in shaft with more accuracy.
 
-![link 4 loads](linkDesign4Distributedload.png)
+![link 4 loads](linkDesign4DistribLoad.png)
 
 Additionally constraints were placed on the entire surface of the 1 in hole considering the press fitted pin strongly resists deformation of the hole. Feature A's constraints were modified to fix the only top half of the surface of the hole contacting feature A. Considering the small clearance of the running fit the bottom half of the hole of feature A would not make contact with the shaft and would be free to move around.
 
@@ -456,10 +456,10 @@ Working on this assignment I learned that you can have correct calculations from
 
 #### Links to Final Design of parts
 
-Bracket 3: https://drive.google.com/file/d/12l8antniPuxIdXACS5OrWOCKRAcGJWWE/view?usp=sharing
-Bracket 4: https://drive.google.com/file/d/17HQBk8nxrFzp8-IhcIAzam1sA52BWZEd/view?usp=sharing 
-Link 3: https://drive.google.com/file/d/1h7J9XQkMWZm3U3GuXcDyKwTzK1gr1LT6/view?usp=sharing
-Link 4: https://drive.google.com/file/d/1uLcdxBusgoumxTZpC1S0A9KhxxlhCB7S/view?usp=sharing
+- Bracket 3: https://drive.google.com/file/d/12l8antniPuxIdXACS5OrWOCKRAcGJWWE/view?usp=sharing
+- Bracket 4: https://drive.google.com/file/d/17HQBk8nxrFzp8-IhcIAzam1sA52BWZEd/view?usp=sharing 
+- Link 3: https://drive.google.com/file/d/1h7J9XQkMWZm3U3GuXcDyKwTzK1gr1LT6/view?usp=sharing
+- Link 4: https://drive.google.com/file/d/1uLcdxBusgoumxTZpC1S0A9KhxxlhCB7S/view?usp=sharing
 
 #### Prompts used
 - what is the contact pressure of a shaft and hole with an interference of 0.0008 in, a hub with an outer diameter of 1.2 in, a 1 in shaft, and a hole sized to 0.9992 in. Both shaft and hole are made of the same material with an elastic modulus of 29007457 psi.
