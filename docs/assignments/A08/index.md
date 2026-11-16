@@ -36,13 +36,10 @@ Using machinery handbook equations I initially calculated max power shafts can t
 ## Decide
 
 ### Shafts
-L/D ratio should range from 0.5-1.5. I chose to make length = 
-
 ### Bearings
-Material chosen was graphite dry initially, however no graphite made sleeves available for shafts of 1/8" diameter. However bronze fits the same criteria and is available for both shaft sizes. 841 Bronze was chosen Shafts are press fitted to gearbox housing with an FN 1 fit.
+L/D ratio should range from 0.5-1.5 I chose to make both bearings ratio 1. Input bearing length would be 0.125 in and output bearing length 0.25 in.
 
-Considering both diameters of 
-
+Material chosen was graphite dry initially, however no graphite made sleeves available for shafts of 1/8" diameter. However bronze fits the same criteria and is available for both shaft sizes. 841 Bronze was chosen as the material. Thickness of both bearings minimum was so low so a 1/8" thickness was chosen for both bearings.
 
 
 ## Communicate
