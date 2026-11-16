@@ -27,10 +27,22 @@ Use a running sliding fit for the size of the hole for the shafts.
 
 ## Analyze
 
-Shafts
+### Shafts
+Using machinery handbook equations I initially calculated max power shafts can transmit given its diameter and compared it to power being transmitted from torque. Then I corrected calculations to compare stress caused by transmit given torque compared to what stress each shaft can handle.
+
+### Bearings
 
 
 ## Decide
+
+### Shafts
+L/D ratio should range from 0.5-1.5. I chose to make length = 
+
+### Bearings
+Material chosen was graphite dry initially, however no graphite made sleeves available for shafts of 1/8" diameter. However bronze fits the same criteria and is available for both shaft sizes. 841 Bronze was chosen Shafts are press fitted to gearbox housing with an FN 1 fit.
+
+Considering both diameters of 
+
 
 
 ## Communicate
