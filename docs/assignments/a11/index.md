@@ -26,7 +26,9 @@ Leadscrew material: ASTM A108
 Each leadscrew requires 5.459 N·m of torque. Since each leadscrew will be driven by its own motor, both motors must be capable of producing at least this amount of torque. Each motor must also operate over an output speed range of approximately 0.394–19.685 RPM.
 
 A DC gearmotor is being considered because the leadscrews require relatively high torque at low speeds. A motor with an output speed near 20 RPM and a continuous torque rating of at least 5.459 N·m would be suitable.
-I found a motor rated for 6 N*m and 28RPM [Here](https://cautop.com/mall/show-1993526.html)
+I found a motor rated for 6 N*m and 28 RPM linked below.
+
+Motor used: https://cautop.com/mall/show-1993526.html
 
 I used Excel to generate theoretical speed and power values based on torque. 10 N*m is the peak torque listed, and my Excel formula for speed was “(33*(1-A2/10))*2*PI()/60,”  which linearly decreased the speed from 33 to 0 and converted RPM to Rad/s.
 
@@ -169,10 +171,10 @@ This bearing plate will be 0.5” thick and use 0.1/4”-20 bolts at each corner
 | 5 | 2 | DC Worm Gear Motor | $18.05 | $36.10 | [Purchase](https://cautop.com/mall/show-1993526.html) |
 | 6 | 2 | Motor Mounting Brackets | $8.00 | $16.00 | N/A |
 | 7 | 2 | Leadscrew Couplers | $12.00 | $24.00 | N/A |
-| 8 | 8 | 1/4-20 Bolts | $0.80 | $7.99 | [Purchase](www.amazon.com/dp/B07MQXL594)|
+| 8 | 8 | 1/4-20 Bolts | $0.80 | $7.99 | [Purchase](https://www.amazon.com/dp/B07MQXL594)|
 | 9 | 8 | 1/4-20  Nuts | $0.16 | $4.99 | [Purchase](https://www.amazon.com/dp/B0CSY9G7TW)|
 | 10 | 2 | Floating Bearing Mounts | $6.00 | $12.00 | N/A |
-| | | | **Total Cost** | **$324.32** | |
+|  |  |  |  | **Total Cost** | **$324.32** |
 
 ### Labor Costs
 
@@ -212,13 +214,13 @@ Time Spent: 4 hours
 
 
 ### Sean Chadwick
-The biggest lesson that I learned was in the area of setting up free body diagrams. After having to redo the free body diagram for the frame design portion of choosing mounts, I realized that the complexity of the free body diagram will determine how long the project will take and how accurate it will be. I got better at spec’ing out parts using mcmaster-carr and utilizing that to my advantage when designing certain parts.
+The biggest lesson that I learned was in the area of setting up free body diagrams. After having to redo the free body diagram for the frame design portion of choosing mounts, I realized that the complexity of the free body diagram will determine how long the project will take and how accurate it will be. I got better at spec’ing out parts using McMaster-Carr and utilizing that to my advantage when designing certain parts.
 Time Spent: 5 hours
 
 
 ### Marvin Sibelius
 Time Spent: 6 hours
-The biggest lesson that I learned is that more complex geometries require more time to properly constrain and model forces for FEA. I learned that when possible, it is important to have a solid idea of how your part is fixed before committing to an FEA study. I learned that planning an assembly would save significantly more time in making an assembly in SolidWorks. I learned that it is important to communicate between team members so you can have a better understanding of their engineering decisions.
+The biggest lesson that I learned is that more complex geometries require more time to properly constrain and model forces for FEA. I learned that when possible, it is important to have a solid idea of how your part is fixed before committing to an FEA study. I learned that planning an assembly would save significantly more time than making an assembly in SolidWorks. I learned that it is important to communicate between team members so you can have a better understanding of their engineering decisions.
 
 ### Link To Folder of Parts & Drawings
 - https://drive.google.com/drive/folders/14NOOHz9R6fuN6NelSo4oPWweM5v9AqLG?usp=sharing
